@@ -241,7 +241,7 @@ Here is how you can combine a reducer with context:
 
 ### Step 1: Create the context {/*step-1-create-the-context*/}
 
-The `useReducer` Hook returns the current `tasks` and the `dispatch` function that enables you update them:
+The `useReducer` Hook returns the current `tasks` and the `dispatch` function that enables you to update them:
 
 ```js
 const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);

@@ -4,7 +4,7 @@ title: startTransition
 
 <Intro>
 
-`startTransition` enables you update the state without blocking the UI.
+`startTransition` enables you to update the state without blocking the UI.
 
 ```js
 startTransition(scope)

@@ -218,7 +218,7 @@ There is no exact equivalent for `constructor` in function components. To declar
 
 If you define `componentDidCatch`, React will call it when some child component (including distant children) throws an error during rendering. This enables you log that error to an error reporting service in production.
 
-Typically, it is used together with [`static getDerivedStateFromError`](#static-getderivedstatefromerror) which enables you update state in response to an error and display an error message to the user. A component with these methods is called an *error boundary.*
+Typically, it is used together with [`static getDerivedStateFromError`](#static-getderivedstatefromerror) which enables you to update state in response to an error and display an error message to the user. A component with these methods is called an *error boundary.*
 
 [See an example.](#catching-rendering-errors-with-an-error-boundary)
 
@@ -659,7 +659,7 @@ It only affects what `this.state` will return starting from the *next* render.
 
 </Pitfall>
 
-You can also pass a function to `setState`. It enables you update state based on the previous state:
+You can also pass a function to `setState`. It enables you to update state based on the previous state:
 
 ```js {2-6}
   handleIncreaseAge = () => {
@@ -1347,7 +1347,7 @@ We recommend defining components as functions instead of classes. [See how to mi
 
 By default, if your application throws an error during rendering, React will remove its UI from the screen. To prevent this, you can wrap a part of your UI into an *error boundary*. An error boundary is a special component that enables you display some fallback UI instead of the part that crashed--for example, an error message.
 
-To implement an error boundary component, you need to provide [`static getDerivedStateFromError`](#static-getderivedstatefromerror) which enables you update state in response to an error and display an error message to the user. You can also optionally implement [`componentDidCatch`](#componentdidcatch) to add some extra logic, for example, to log the error to an analytics service.
+To implement an error boundary component, you need to provide [`static getDerivedStateFromError`](#static-getderivedstatefromerror) which enables you to update state in response to an error and display an error message to the user. You can also optionally implement [`componentDidCatch`](#componentdidcatch) to add some extra logic, for example, to log the error to an analytics service.
 
 ```js {7-10,12-19}
 class ErrorBoundary extends React.Component {
