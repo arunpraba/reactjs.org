@@ -113,7 +113,7 @@ This API will be removed in a future major version of React. [Use `createRef` in
 
 </Deprecated>
 
-Lets you access [legacy string refs](https://reactjs.org/docs/refs-and-the-dom.html#legacy-api-string-refs) for this component.
+enables you access [legacy string refs](https://reactjs.org/docs/refs-and-the-dom.html#legacy-api-string-refs) for this component.
 
 ---
 
@@ -158,7 +158,7 @@ Defining `state` in class components is equivalent to calling [`useState`](/refe
 
 ### `constructor(props)` {/*constructor*/}
 
-The [constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor) runs before your class component *mounts* (gets added to the screen). Typically, a constructor is only used for two purposes in React. It lets you declare state and [bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind) your class methods to the class instance:
+The [constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor) runs before your class component *mounts* (gets added to the screen). Typically, a constructor is only used for two purposes in React. It enables you declare state and [bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind) your class methods to the class instance:
 
 ```js {2-6}
 class Counter extends Component {
@@ -216,9 +216,9 @@ There is no exact equivalent for `constructor` in function components. To declar
 
 ### `componentDidCatch(error, info)` {/*componentdidcatch*/}
 
-If you define `componentDidCatch`, React will call it when some child component (including distant children) throws an error during rendering. This lets you log that error to an error reporting service in production.
+If you define `componentDidCatch`, React will call it when some child component (including distant children) throws an error during rendering. This enables you log that error to an error reporting service in production.
 
-Typically, it is used together with [`static getDerivedStateFromError`](#static-getderivedstatefromerror) which lets you update state in response to an error and display an error message to the user. A component with these methods is called an *error boundary.*
+Typically, it is used together with [`static getDerivedStateFromError`](#static-getderivedstatefromerror) which enables you update state in response to an error and display an error message to the user. A component with these methods is called an *error boundary.*
 
 [See an example.](#catching-rendering-errors-with-an-error-boundary)
 
@@ -470,7 +470,7 @@ For many use cases, defining `componentDidMount`, `componentDidUpdate`, and `com
 
 Forces a component to re-render.
 
-Usually, this is not necessary. If your component's [`render`](#render) method only reads from [`this.props`](#props), [`this.state`](#state), or [`this.context`,](#context) it will re-render automatically when you call [`setState`](#setstate) inside your component or one of its parents. However, if your component's `render` method reads directly from an external data source, you have to tell React to update the user interface when that data source changes. That's what `forceUpdate` lets you do.
+Usually, this is not necessary. If your component's [`render`](#render) method only reads from [`this.props`](#props), [`this.state`](#state), or [`this.context`,](#context) it will re-render automatically when you call [`setState`](#setstate) inside your component or one of its parents. However, if your component's `render` method reads directly from an external data source, you have to tell React to update the user interface when that data source changes. That's what `forceUpdate` enables you do.
 
 Try to avoid all uses of `forceUpdate` and only read from `this.props` and `this.state` in `render`.
 
@@ -502,7 +502,7 @@ This API will be removed in a future major version of React. [Use `Context.Provi
 
 </Deprecated>
 
-Lets you specify the values for the [legacy context](https://reactjs.org/docs/legacy-context.html) is provided by this component.
+enables you specify the values for the [legacy context](https://reactjs.org/docs/legacy-context.html) is provided by this component.
 
 ---
 
@@ -659,7 +659,7 @@ It only affects what `this.state` will return starting from the *next* render.
 
 </Pitfall>
 
-You can also pass a function to `setState`. It lets you update state based on the previous state:
+You can also pass a function to `setState`. It enables you update state based on the previous state:
 
 ```js {2-6}
   handleIncreaseAge = () => {
@@ -886,7 +886,7 @@ This API will be removed in a future major version of React. [Use `static contex
 
 </Deprecated>
 
-Lets you specify which [legacy context](https://reactjs.org/docs/legacy-context.html) is provided by this component.
+enables you specify which [legacy context](https://reactjs.org/docs/legacy-context.html) is provided by this component.
 
 ---
 
@@ -898,7 +898,7 @@ This API will be removed in a future major version of React. [Use `static contex
 
 </Deprecated>
 
-Lets you specify which [legacy context](https://reactjs.org/docs/legacy-context.html) is consumed by this component.
+enables you specify which [legacy context](https://reactjs.org/docs/legacy-context.html) is consumed by this component.
 
 ---
 
@@ -1006,9 +1006,9 @@ We recommend using [TypeScript](https://www.typescriptlang.org/) instead of chec
 
 ### `static getDerivedStateFromError(error)` {/*static-getderivedstatefromerror*/}
 
-If you define `static getDerivedStateFromError`, React will call it when a child component (including distant children) throws an error during rendering. This lets you display an error message instead of clearing the UI.
+If you define `static getDerivedStateFromError`, React will call it when a child component (including distant children) throws an error during rendering. This enables you display an error message instead of clearing the UI.
 
-Typically, it is used together with [`componentDidCatch`](#componentdidcatch) which lets you send the error report to some analytics service. A component with these methods is called an *error boundary.*
+Typically, it is used together with [`componentDidCatch`](#componentdidcatch) which enables you send the error report to some analytics service. A component with these methods is called an *error boundary.*
 
 [See an example.](#catching-rendering-errors-with-an-error-boundary)
 
@@ -1345,9 +1345,9 @@ We recommend defining components as functions instead of classes. [See how to mi
 
 ### Catching rendering errors with an error boundary {/*catching-rendering-errors-with-an-error-boundary*/}
 
-By default, if your application throws an error during rendering, React will remove its UI from the screen. To prevent this, you can wrap a part of your UI into an *error boundary*. An error boundary is a special component that lets you display some fallback UI instead of the part that crashed--for example, an error message.
+By default, if your application throws an error during rendering, React will remove its UI from the screen. To prevent this, you can wrap a part of your UI into an *error boundary*. An error boundary is a special component that enables you display some fallback UI instead of the part that crashed--for example, an error message.
 
-To implement an error boundary component, you need to provide [`static getDerivedStateFromError`](#static-getderivedstatefromerror) which lets you update state in response to an error and display an error message to the user. You can also optionally implement [`componentDidCatch`](#componentdidcatch) to add some extra logic, for example, to log the error to an analytics service.
+To implement an error boundary component, you need to provide [`static getDerivedStateFromError`](#static-getderivedstatefromerror) which enables you update state in response to an error and display an error message to the user. You can also optionally implement [`componentDidCatch`](#componentdidcatch) to add some extra logic, for example, to log the error to an analytics service.
 
 ```js {7-10,12-19}
 class ErrorBoundary extends React.Component {

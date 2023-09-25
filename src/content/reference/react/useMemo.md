@@ -4,7 +4,7 @@ title: useMemo
 
 <Intro>
 
-`useMemo` is a React Hook that lets you cache the result of a calculation between re-renders.
+`useMemo` is a React Hook that enables you cache the result of a calculation between re-renders.
 
 ```js
 const cachedValue = useMemo(calculateValue, dependencies)
@@ -99,7 +99,7 @@ function TodoList({ todos, tab, theme }) {
 }
 ```
 
-Usually, this isn't a problem because most calculations are very fast. However, if you're filtering or transforming a large array, or doing some expensive computation, you might want to skip doing it again if data hasn't changed. If both `todos` and `tab` are the same as they were during the last render, wrapping the calculation in `useMemo` like earlier lets you reuse `visibleTodos` you've already calculated before.
+Usually, this isn't a problem because most calculations are very fast. However, if you're filtering or transforming a large array, or doing some expensive computation, you might want to skip doing it again if data hasn't changed. If both `todos` and `tab` are the same as they were during the last render, wrapping the calculation in `useMemo` like earlier enables you reuse `visibleTodos` you've already calculated before.
 
 This type of caching is called *[memoization.](https://en.wikipedia.org/wiki/Memoization)*
 
@@ -148,7 +148,7 @@ If your app is like this site, and most interactions are coarse (like replacing 
 Optimizing with `useMemo`  is only valuable in a few cases:
 
 - The calculation you're putting in `useMemo` is noticeably slow, and its dependencies rarely change.
-- You pass it as a prop to a component wrapped in [`memo`.](/reference/react/memo) You want to skip re-rendering if the value hasn't changed. Memoization lets your component re-render only when dependencies aren't the same.
+- You pass it as a prop to a component wrapped in [`memo`.](/reference/react/memo) You want to skip re-rendering if the value hasn't changed. Memoization enables your component re-render only when dependencies aren't the same.
 - The value you're passing is later used as a dependency of some Hook. For example, maybe another `useMemo` calculation value depends on it. Or maybe you are depending on this value from [`useEffect.`](/reference/react/useEffect)
 
 There is no benefit to wrapping a calculation in `useMemo` in other cases. There is no significant harm to doing that either, so some teams choose to not think about individual cases, and memoize as much as possible. The downside of this approach is that code becomes less readable. Also, not all memoization is effective: a single value that's "always new" is enough to break memoization for an entire component.
@@ -609,7 +609,7 @@ export default function TodoList({ todos, tab, theme }) {
 ```
 
 
-**By wrapping the `visibleTodos` calculation in `useMemo`, you ensure that it has the *same* value between the re-renders** (until dependencies change). You don't *have to* wrap a calculation in `useMemo` unless you do it for some specific reason. In this example, the reason is that you pass it to a component wrapped in [`memo`,](/reference/react/memo) and this lets it skip re-rendering. There are a few other reasons to add `useMemo` which are described further on this page.
+**By wrapping the `visibleTodos` calculation in `useMemo`, you ensure that it has the *same* value between the re-renders** (until dependencies change). You don't *have to* wrap a calculation in `useMemo` unless you do it for some specific reason. In this example, the reason is that you pass it to a component wrapped in [`memo`,](/reference/react/memo) and this enables it skip re-rendering. There are a few other reasons to add `useMemo` which are described further on this page.
 
 <DeepDive>
 
@@ -1152,7 +1152,7 @@ export default function Page({ productId, referrer }) {
 }
 ```
 
-The two examples above are completely equivalent. The only benefit to `useCallback` is that it lets you avoid writing an extra nested function inside. It doesn't do anything else. [Read more about `useCallback`.](/reference/react/useCallback)
+The two examples above are completely equivalent. The only benefit to `useCallback` is that it enables you avoid writing an extra nested function inside. It doesn't do anything else. [Read more about `useCallback`.](/reference/react/useCallback)
 
 ---
 

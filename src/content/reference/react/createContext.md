@@ -4,7 +4,7 @@ title: createContext
 
 <Intro>
 
-`createContext` lets you create a [context](/learn/passing-data-deeply-with-context) that components can provide or read.
+`createContext` enables you create a [context](/learn/passing-data-deeply-with-context) that components can provide or read.
 
 ```js
 const SomeContext = createContext(defaultValue)
@@ -40,7 +40,7 @@ const ThemeContext = createContext('light');
 
 **The context object itself does not hold any information.** It represents _which_ context other components read or provide. Typically, you will use [`SomeContext.Provider`](#provider) in components above to specify the context value, and call [`useContext(SomeContext)`](/reference/react/useContext) in components below to read it. The context object has a few properties:
 
-* `SomeContext.Provider` lets you provide the context value to components.
+* `SomeContext.Provider` enables you provide the context value to components.
 * `SomeContext.Consumer` is an alternative and rarely used way to read the context value.
 
 ---
@@ -104,7 +104,7 @@ function Button() {
 
 ### Creating context {/*creating-context*/}
 
-Context lets components [pass information deep down](/learn/passing-data-deeply-with-context) without explicitly passing props.
+Context enables components [pass information deep down](/learn/passing-data-deeply-with-context) without explicitly passing props.
 
 Call `createContext` outside any components to create one or more contexts.
 

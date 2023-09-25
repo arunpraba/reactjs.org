@@ -4,7 +4,7 @@ title: useReducer
 
 <Intro>
 
-`useReducer` is a React Hook that lets you add a [reducer](/learn/extracting-state-logic-into-a-reducer) to your component.
+`useReducer` is a React Hook that enables you add a [reducer](/learn/extracting-state-logic-into-a-reducer) to your component.
 
 ```js
 const [state, dispatch] = useReducer(reducer, initialArg, init?)
@@ -47,7 +47,7 @@ function MyComponent() {
 `useReducer` returns an array with exactly two values:
 
 1. The current state. During the first render, it's set to `init(initialArg)` or `initialArg` (if there's no `init`).
-2. The [`dispatch` function](#dispatch) that lets you update the state to a different value and trigger a re-render.
+2. The [`dispatch` function](#dispatch) that enables you update the state to a different value and trigger a re-render.
 
 #### Caveats {/*caveats*/}
 
@@ -58,7 +58,7 @@ function MyComponent() {
 
 ### `dispatch` function {/*dispatch*/}
 
-The `dispatch` function returned by `useReducer` lets you update the state to a different value and trigger a re-render. You need to pass the action as the only argument to the `dispatch` function:
+The `dispatch` function returned by `useReducer` enables you update the state to a different value and trigger a re-render. You need to pass the action as the only argument to the `dispatch` function:
 
 ```js
 const [state, dispatch] = useReducer(reducer, { age: 42 });
@@ -109,7 +109,7 @@ function MyComponent() {
 `useReducer` returns an array with exactly two items:
 
 1. The <CodeStep step={1}>current state</CodeStep> of this state variable, initially set to the <CodeStep step={3}>initial state</CodeStep> you provided.
-2. The <CodeStep step={2}>`dispatch` function</CodeStep> that lets you change it in response to interaction.
+2. The <CodeStep step={2}>`dispatch` function</CodeStep> that enables you change it in response to interaction.
 
 To update what's on the screen, call <CodeStep step={2}>`dispatch`</CodeStep> with an object representing what the user did, called an *action*:
 
@@ -157,7 +157,7 @@ button { display: block; margin-top: 10px; }
 
 </Sandpack>
 
-`useReducer` is very similar to [`useState`](/reference/react/useState), but it lets you move the state update logic from event handlers into a single function outside of your component. Read more about [choosing between `useState` and `useReducer`.](/learn/extracting-state-logic-into-a-reducer#comparing-usestate-and-usereducer)
+`useReducer` is very similar to [`useState`](/reference/react/useState), but it enables you move the state update logic from event handlers into a single function outside of your component. Read more about [choosing between `useState` and `useReducer`.](/learn/extracting-state-logic-into-a-reducer#comparing-usestate-and-usereducer)
 
 ---
 
@@ -511,7 +511,7 @@ ul, li { margin: 0; padding: 0; }
 
 #### Writing concise update logic with Immer {/*writing-concise-update-logic-with-immer*/}
 
-If updating arrays and objects without mutation feels tedious, you can use a library like [Immer](https://github.com/immerjs/use-immer#useimmerreducer) to reduce repetitive code. Immer lets you write concise code as if you were mutating objects, but under the hood it performs immutable updates:
+If updating arrays and objects without mutation feels tedious, you can use a library like [Immer](https://github.com/immerjs/use-immer#useimmerreducer) to reduce repetitive code. Immer enables you write concise code as if you were mutating objects, but under the hood it performs immutable updates:
 
 <Sandpack>
 

@@ -377,7 +377,7 @@ function Message({ initialColor }) {
 
 ## Avoid duplication in state {/*avoid-duplication-in-state*/}
 
-This menu list component lets you choose a single travel snack out of several:
+This menu list component enables you choose a single travel snack out of several:
 
 <Sandpack>
 

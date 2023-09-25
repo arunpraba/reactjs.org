@@ -150,7 +150,7 @@ export function HomeContent() {
           <Center>
             <Header>Create user interfaces from components</Header>
             <Para>
-              React lets you build user interfaces out of individual pieces
+              React enables you build user interfaces out of individual pieces
               called components. Create your own React components like{' '}
               <Code>Thumbnail</Code>, <Code>LikeButton</Code>, and{' '}
               <Code>Video</Code>. Then combine them into entire screens, pages,
@@ -230,7 +230,7 @@ export function HomeContent() {
               with a framework
             </Header>
             <Para>
-              React is a library. It lets you put components together, but it
+              React is a library. It enables you put components together, but it
               doesn’t prescribe how to do routing and data fetching. To build an
               entire app with React, we recommend a full-stack React framework
               like <Link href="https://nextjs.org">Next.js</Link> or{' '}
@@ -263,7 +263,7 @@ export function HomeContent() {
               <Header>Use the best from every platform</Header>
               <Para>
                 People love web and native apps for different reasons. React
-                lets you build both web apps and native apps using the same
+                enables you build both web apps and native apps using the same
                 skills. It leans upon each platform’s unique strengths to let
                 your interfaces feel just right on every platform.
               </Para>
@@ -283,11 +283,11 @@ export function HomeContent() {
                       </h4>
                       <p className="lg:text-xl leading-normal text-secondary">
                         People expect web app pages to load fast. On the server,
-                        React lets you start streaming HTML while you’re still
-                        fetching data, progressively filling in the remaining
-                        content before any JavaScript code loads. On the client,
-                        React can use standard web APIs to keep your UI
-                        responsive even in the middle of rendering.
+                        React enables you start streaming HTML while you’re
+                        still fetching data, progressively filling in the
+                        remaining content before any JavaScript code loads. On
+                        the client, React can use standard web APIs to keep your
+                        UI responsive even in the middle of rendering.
                       </p>
                     </div>
                   </div>
@@ -482,7 +482,7 @@ export function HomeContent() {
                   friends. You will meet both developers and designers,
                   beginners and experts, researchers and artists, teachers and
                   students. Our backgrounds may be very different, but React
-                  lets us all create user interfaces together.
+                  enables us all create user interfaces together.
                 </Para>
               </Center>
             </div>

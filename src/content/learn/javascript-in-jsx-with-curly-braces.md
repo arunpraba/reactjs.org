@@ -4,7 +4,7 @@ title: JavaScript in JSX with Curly Braces
 
 <Intro>
 
-JSX lets you write HTML-like markup inside a JavaScript file, keeping rendering logic and content in the same place. Sometimes you will want to add a little JavaScript logic or reference a dynamic property inside that markup. In this situation, you can use curly braces in your JSX to open a window to JavaScript.
+JSX enables you write HTML-like markup inside a JavaScript file, keeping rendering logic and content in the same place. Sometimes you will want to add a little JavaScript logic or reference a dynamic property inside that markup. In this situation, you can use curly braces in your JSX to open a window to JavaScript.
 
 </Intro>
 
@@ -230,7 +230,7 @@ The component can use these values from `person` like so:
   <h1>{person.name}'s Todos</h1>
 ```
 
-JSX is very minimal as a templating language because it lets you organize data and logic using JavaScript.
+JSX is very minimal as a templating language because it enables you organize data and logic using JavaScript.
 
 <Recap>
 

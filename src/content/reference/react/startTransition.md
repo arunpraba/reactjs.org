@@ -4,7 +4,7 @@ title: startTransition
 
 <Intro>
 
-`startTransition` lets you update the state without blocking the UI.
+`startTransition` enables you update the state without blocking the UI.
 
 ```js
 startTransition(scope)
@@ -20,7 +20,7 @@ startTransition(scope)
 
 ### `startTransition(scope)` {/*starttransitionscope*/}
 
-The `startTransition` function lets you mark a state update as a transition.
+The `startTransition` function enables you mark a state update as a transition.
 
 ```js {7,9}
 import { startTransition } from 'react';

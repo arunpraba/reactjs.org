@@ -4,7 +4,7 @@ title: useDeferredValue
 
 <Intro>
 
-`useDeferredValue` is a React Hook that lets you defer updating a part of the UI.
+`useDeferredValue` is a React Hook that enables you defer updating a part of the UI.
 
 ```js
 const deferredValue = useDeferredValue(value)
@@ -758,7 +758,7 @@ const SlowList = memo(function SlowList({ text }) {
 
 However, this only helps if the `SlowList` props are *the same* as during the previous render. The problem you're facing now is that it's slow when they're *different,* and when you actually need to show different visual output.
 
-Concretely, the main performance problem is that whenever you type into the input, the `SlowList` receives new props, and re-rendering its entire tree makes the typing feel janky. In this case, `useDeferredValue` lets you prioritize updating the input (which must be fast) over updating the result list (which is allowed to be slower):
+Concretely, the main performance problem is that whenever you type into the input, the `SlowList` receives new props, and re-rendering its entire tree makes the typing feel janky. In this case, `useDeferredValue` enables you prioritize updating the input (which must be fast) over updating the result list (which is allowed to be slower):
 
 ```js {3,7}
 function App() {
@@ -779,7 +779,7 @@ This does not make re-rendering of the `SlowList` faster. However, it tells Reac
 
 #### Deferred re-rendering of the list {/*deferred-re-rendering-of-the-list*/}
 
-In this example, each item in the `SlowList` component is **artificially slowed down** so that you can see how `useDeferredValue` lets you keep the input responsive. Type into the input and notice that typing feels snappy while the list "lags behind" it.
+In this example, each item in the `SlowList` component is **artificially slowed down** so that you can see how `useDeferredValue` enables you keep the input responsive. Type into the input and notice that typing feels snappy while the list "lags behind" it.
 
 <Sandpack>
 

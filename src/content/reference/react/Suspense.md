@@ -4,7 +4,7 @@ title: <Suspense>
 
 <Intro>
 
-`<Suspense>` lets you display a fallback until its children have finished loading.
+`<Suspense>` enables you display a fallback until its children have finished loading.
 
 
 ```js
@@ -585,7 +585,7 @@ function Details({ artistId }) {
 
 ### Revealing nested content as it loads {/*revealing-nested-content-as-it-loads*/}
 
-When a component suspends, the closest parent Suspense component shows the fallback. This lets you nest multiple Suspense components to create a loading sequence. Each Suspense boundary's fallback will be filled in as the next level of content becomes available. For example, you can give the album list its own fallback:
+When a component suspends, the closest parent Suspense component shows the fallback. This enables you nest multiple Suspense components to create a loading sequence. Each Suspense boundary's fallback will be filled in as the next level of content becomes available. For example, you can give the album list its own fallback:
 
 ```js {3,7}
 <Suspense fallback={<BigSpinner />}>
@@ -1116,7 +1116,7 @@ input { margin: 10px; }
 
 </Sandpack>
 
-A common alternative UI pattern is to *defer* updating the list and to keep showing the previous results until the new results are ready. The [`useDeferredValue`](/reference/react/useDeferredValue) Hook lets you pass a deferred version of the query down: 
+A common alternative UI pattern is to *defer* updating the list and to keep showing the previous results until the new results are ready. The [`useDeferredValue`](/reference/react/useDeferredValue) Hook enables you pass a deferred version of the query down: 
 
 ```js {3,11}
 export default function App() {

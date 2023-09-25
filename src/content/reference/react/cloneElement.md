@@ -10,7 +10,7 @@ Using `cloneElement` is uncommon and can lead to fragile code. [See common alter
 
 <Intro>
 
-`cloneElement` lets you create a new React element using another element as a starting point.
+`cloneElement` enables you create a new React element using another element as a starting point.
 
 ```js
 const clonedElement = cloneElement(element, props, ...children)

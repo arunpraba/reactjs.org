@@ -10,7 +10,7 @@ Using `flushSync` is uncommon and can hurt the performance of your app.
 
 <Intro>
 
-`flushSync` lets you force React to flush any updates inside the provided callback synchronously. This ensures that the DOM is updated immediately.
+`flushSync` enables you force React to flush any updates inside the provided callback synchronously. This ensures that the DOM is updated immediately.
 
 ```js
 flushSync(callback)

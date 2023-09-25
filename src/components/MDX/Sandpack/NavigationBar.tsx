@@ -123,7 +123,7 @@ export function NavigationBar({providedFiles}: {providedFiles: Array<string>}) {
                 ref={tabsRef}
                 className={cn(
                   // The container for all tabs is always in the DOM, but
-                  // not always visible. This lets us measure how much space
+                  // not always visible. This enables us measure how much space
                   // the tabs would take if displayed. We use this to decide
                   // whether to keep showing the dropdown, or show all tabs.
                   'w-[fit-content]',

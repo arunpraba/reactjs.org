@@ -18,7 +18,7 @@ title: Your First Component
 
 ## Components: UI building blocks {/*components-ui-building-blocks*/}
 
-On the Web, HTML lets us create rich structured documents with its built-in set of tags like `<h1>` and `<li>`:
+On the Web, HTML enables us create rich structured documents with its built-in set of tags like `<h1>` and `<li>`:
 
 ```html
 <article>
@@ -33,7 +33,7 @@ On the Web, HTML lets us create rich structured documents with its built-in set 
 
 This markup represents this article `<article>`, its heading `<h1>`, and an (abbreviated) table of contents as an ordered list `<ol>`. Markup like this, combined with CSS for style, and JavaScript for interactivity, lies behind every sidebar, avatar, modal, dropdown—every piece of UI you see on the Web.
 
-React lets you combine your markup, CSS, and JavaScript into custom "components", **reusable UI elements for your app.** The table of contents code you saw above could be turned into a `<TableOfContents />` component you could render on every page. Under the hood, it still uses the same HTML tags like `<article>`, `<h1>`, etc.
+React enables you combine your markup, CSS, and JavaScript into custom "components", **reusable UI elements for your app.** The table of contents code you saw above could be turned into a `<TableOfContents />` component you could render on every page. Under the hood, it still uses the same HTML tags like `<article>`, `<h1>`, etc.
 
 Just like with HTML tags, you can compose, order and nest components to design whole pages. For example, the documentation page you're reading is made out of React components:
 
@@ -80,7 +80,7 @@ And here's how to build a component:
 
 ### Step 1: Export the component {/*step-1-export-the-component*/}
 
-The `export default` prefix is a [standard JavaScript syntax](https://developer.mozilla.org/docs/web/javascript/reference/statements/export) (not specific to React). It lets you mark the main function in a file so that you can later import it from other files. (More on importing in [Importing and Exporting Components](/learn/importing-and-exporting-components)!)
+The `export default` prefix is a [standard JavaScript syntax](https://developer.mozilla.org/docs/web/javascript/reference/statements/export) (not specific to React). It enables you mark the main function in a file so that you can later import it from other files. (More on importing in [Importing and Exporting Components](/learn/importing-and-exporting-components)!)
 
 ### Step 2: Define the function {/*step-2-define-the-function*/}
 
@@ -94,7 +94,7 @@ React components are regular JavaScript functions, but **their names must start 
 
 ### Step 3: Add markup {/*step-3-add-markup*/}
 
-The component returns an `<img />` tag with `src` and `alt` attributes. `<img />` is written like HTML, but it is actually JavaScript under the hood! This syntax is called [JSX](/learn/writing-markup-with-jsx), and it lets you embed markup inside JavaScript.
+The component returns an `<img />` tag with `src` and `alt` attributes. `<img />` is written like HTML, but it is actually JavaScript under the hood! This syntax is called [JSX](/learn/writing-markup-with-jsx), and it enables you embed markup inside JavaScript.
 
 Return statements can be written all on one line, as in this component:
 
@@ -225,7 +225,7 @@ Still, many websites only use React to [add interactivity to existing HTML pages
 
 You've just gotten your first taste of React! Let's recap some key points.
 
-* React lets you create components, **reusable UI elements for your app.**
+* React enables you create components, **reusable UI elements for your app.**
 * In a React app, every piece of UI is a component.
 * React components are regular JavaScript functions except:
 

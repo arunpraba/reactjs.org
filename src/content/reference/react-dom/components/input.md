@@ -4,7 +4,7 @@ title: "<input>"
 
 <Intro>
 
-The [built-in browser `<input>` component](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) lets you render different kinds of form inputs.
+The [built-in browser `<input>` component](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) enables you render different kinds of form inputs.
 
 ```js
 <input />
@@ -458,7 +458,7 @@ function SignupForm() {
 
 This significantly improves performance because now only `SignupForm` re-renders on every keystroke.
 
-If there is no way to avoid re-rendering (for example, if `PageContent` depends on the search input's value), [`useDeferredValue`](/reference/react/useDeferredValue#deferring-re-rendering-for-a-part-of-the-ui) lets you keep the controlled input responsive even in the middle of a large re-render.
+If there is no way to avoid re-rendering (for example, if `PageContent` depends on the search input's value), [`useDeferredValue`](/reference/react/useDeferredValue#deferring-re-rendering-for-a-part-of-the-ui) enables you keep the controlled input responsive even in the middle of a large re-render.
 
 ---
 

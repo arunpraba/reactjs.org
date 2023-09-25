@@ -4,7 +4,7 @@ title: createElement
 
 <Intro>
 
-`createElement` lets you create a React element. It serves as an alternative to writing [JSX.](/learn/writing-markup-with-jsx)
+`createElement` enables you create a React element. It serves as an alternative to writing [JSX.](/learn/writing-markup-with-jsx)
 
 ```js
 const element = createElement(type, props, ...children)

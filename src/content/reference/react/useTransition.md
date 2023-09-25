@@ -4,7 +4,7 @@ title: useTransition
 
 <Intro>
 
-`useTransition` is a React Hook that lets you update the state without blocking the UI.
+`useTransition` is a React Hook that enables you update the state without blocking the UI.
 
 ```js
 const [isPending, startTransition] = useTransition()
@@ -42,13 +42,13 @@ function TabContainer() {
 `useTransition` returns an array with exactly two items:
 
 1. The `isPending` flag that tells you whether there is a pending transition.
-2. The [`startTransition` function](#starttransition) that lets you mark a state update as a transition.
+2. The [`startTransition` function](#starttransition) that enables you mark a state update as a transition.
 
 ---
 
 ### `startTransition` function {/*starttransition*/}
 
-The `startTransition` function returned by `useTransition` lets you mark a state update as a transition.
+The `startTransition` function returned by `useTransition` enables you mark a state update as a transition.
 
 ```js {6,8}
 function TabContainer() {
@@ -106,7 +106,7 @@ function TabContainer() {
 `useTransition` returns an array with exactly two items:
 
 1. The <CodeStep step={1}>`isPending` flag</CodeStep> that tells you whether there is a pending transition.
-2. The <CodeStep step={2}>`startTransition` function</CodeStep> that lets you mark a state update as a transition.
+2. The <CodeStep step={2}>`startTransition` function</CodeStep> that enables you mark a state update as a transition.
 
 You can then mark a state update as a transition like this:
 
@@ -1116,8 +1116,8 @@ function Router() {
 
 This is recommended for two reasons:
 
-- [Transitions are interruptible,](#marking-a-state-update-as-a-non-blocking-transition) which lets the user click away without waiting for the re-render to complete.
-- [Transitions prevent unwanted loading indicators,](#preventing-unwanted-loading-indicators) which lets the user avoid jarring jumps on navigation.
+- [Transitions are interruptible,](#marking-a-state-update-as-a-non-blocking-transition) which enables the user click away without waiting for the re-render to complete.
+- [Transitions prevent unwanted loading indicators,](#preventing-unwanted-loading-indicators) which enables the user avoid jarring jumps on navigation.
 
 Here is a tiny simplified router example using transitions for navigations.
 
@@ -1522,7 +1522,7 @@ return <input value={text} onChange={handleChange} />;
 
 This is because transitions are non-blocking, but updating an input in response to the change event should happen synchronously. If you want to run a transition in response to typing, you have two options:
 
-1. You can declare two separate state variables: one for the input state (which always updates synchronously), and one that you will update in a transition. This lets you control the input using the synchronous state, and pass the transition state variable (which will "lag behind" the input) to the rest of your rendering logic.
+1. You can declare two separate state variables: one for the input state (which always updates synchronously), and one that you will update in a transition. This enables you control the input using the synchronous state, and pass the transition state variable (which will "lag behind" the input) to the rest of your rendering logic.
 2. Alternatively, you can have one state variable, and add [`useDeferredValue`](/reference/react/useDeferredValue) which will "lag behind" the real value. It will trigger non-blocking re-renders to "catch up" with the new value automatically.
 
 ---

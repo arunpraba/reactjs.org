@@ -4,7 +4,7 @@ title: useContext
 
 <Intro>
 
-`useContext` is a React Hook that lets you read and subscribe to [context](/learn/passing-data-deeply-with-context) from your component.
+`useContext` is a React Hook that enables you read and subscribe to [context](/learn/passing-data-deeply-with-context) from your component.
 
 ```js
 const value = useContext(SomeContext)
@@ -305,7 +305,7 @@ Note that `value="dark"` passes the `"dark"` string, but `value={theme}` passes 
 
 #### Updating an object via context {/*updating-an-object-via-context*/}
 
-In this example, there is a `currentUser` state variable which holds an object. You combine `{ currentUser, setCurrentUser }` into a single object and pass it down through the context inside the `value={}`. This lets any component below, such as `LoginButton`, read both `currentUser` and `setCurrentUser`, and then call `setCurrentUser` when needed.
+In this example, there is a `currentUser` state variable which holds an object. You combine `{ currentUser, setCurrentUser }` into a single object and pass it down through the context inside the `value={}`. This enables any component below, such as `LoginButton`, read both `currentUser` and `setCurrentUser`, and then call `setCurrentUser` when needed.
 
 <Sandpack>
 

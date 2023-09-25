@@ -18,7 +18,7 @@ If you want to build a new app or a new website fully with React, we recommend p
 
 ### Next.js {/*nextjs*/}
 
-**[Next.js](https://nextjs.org/) is a full-stack React framework.** It's versatile and lets you create React apps of any size--from a mostly static blog to a complex dynamic application. To create a new Next.js project, run in your terminal:
+**[Next.js](https://nextjs.org/) is a full-stack React framework.** It's versatile and enables you create React apps of any size--from a mostly static blog to a complex dynamic application. To create a new Next.js project, run in your terminal:
 
 <TerminalBlock>
 npx create-next-app
@@ -30,7 +30,7 @@ Next.js is maintained by [Vercel](https://vercel.com/). You can [deploy a Next.j
 
 ### Remix {/*remix*/}
 
-**[Remix](https://remix.run/) is a full-stack React framework with nested routing.** It lets you break your app into nested parts that can load data in parallel and refresh in response to the user actions. To create a new Remix project, run:
+**[Remix](https://remix.run/) is a full-stack React framework with nested routing.** It enables you break your app into nested parts that can load data in parallel and refresh in response to the user actions. To create a new Remix project, run:
 
 <TerminalBlock>
 npx create-remix
@@ -54,7 +54,7 @@ Gatsby is maintained by [Netlify](https://www.netlify.com/). You can [deploy a f
 
 ### Expo (for native apps) {/*expo*/}
 
-**[Expo](https://expo.dev/) is a React framework that lets you create universal Android, iOS, and web apps with truly native UIs.** It provides an SDK for [React Native](https://reactnative.dev/) that makes the native parts easier to use. To create a new Expo project, run:
+**[Expo](https://expo.dev/) is a React framework that enables you create universal Android, iOS, and web apps with truly native UIs.** It provides an SDK for [React Native](https://reactnative.dev/) that makes the native parts easier to use. To create a new Expo project, run:
 
 <TerminalBlock>
 npx create-expo-app
@@ -89,7 +89,7 @@ These features are getting closer to being production-ready every day, and we've
 
 ### Next.js (App Router) {/*nextjs-app-router*/}
 
-**[Next.js's App Router](https://beta.nextjs.org/docs/getting-started) is a redesign of the Next.js APIs aiming to fulfill the React team’s full-stack architecture vision.** It lets you fetch data in asynchronous components that run on the server or even during the build.
+**[Next.js's App Router](https://beta.nextjs.org/docs/getting-started) is a redesign of the Next.js APIs aiming to fulfill the React team’s full-stack architecture vision.** It enables you fetch data in asynchronous components that run on the server or even during the build.
 
 Next.js is maintained by [Vercel](https://vercel.com/). You can [deploy a Next.js app](https://nextjs.org/docs/deployment) to any Node.js or serverless hosting, or to your own server. Next.js also supports [static export](https://beta.nextjs.org/docs/configuring/static-export) which doesn't require a server.
 <Pitfall>
@@ -102,7 +102,7 @@ Next.js's App Router is **currently in beta and is not yet recommended for produ
 
 #### Which features make up the React team’s full-stack architecture vision? {/*which-features-make-up-the-react-teams-full-stack-architecture-vision*/}
 
-Next.js's App Router bundler fully implements the official [React Server Components specification](https://github.com/reactjs/rfcs/blob/main/text/0188-server-components.md). This lets you mix build-time, server-only, and interactive components in a single React tree.
+Next.js's App Router bundler fully implements the official [React Server Components specification](https://github.com/reactjs/rfcs/blob/main/text/0188-server-components.md). This enables you mix build-time, server-only, and interactive components in a single React tree.
 
 For example, you can write a server-only React component as an `async` function that reads from a database or from a file. Then you can pass data down from it to your interactive components:
 
@@ -120,7 +120,7 @@ async function Talks({ confId }) {
 }
 ```
 
-Next.js's App Router also integrates [data fetching with Suspense](/blog/2022/03/29/react-v18#suspense-in-data-frameworks). This lets you specify a loading state (like a skeleton placeholder) for different parts of your user interface directly in your React tree:
+Next.js's App Router also integrates [data fetching with Suspense](/blog/2022/03/29/react-v18#suspense-in-data-frameworks). This enables you specify a loading state (like a skeleton placeholder) for different parts of your user interface directly in your React tree:
 
 ```js
 <Suspense fallback={<TalksLoading />}>

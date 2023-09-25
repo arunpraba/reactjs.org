@@ -4,7 +4,7 @@ title: useSyncExternalStore
 
 <Intro>
 
-`useSyncExternalStore` is a React Hook that lets you subscribe to an external store.
+`useSyncExternalStore` is a React Hook that enables you subscribe to an external store.
 
 ```js
 const snapshot = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot?)
@@ -223,7 +223,7 @@ function subscribe(callback) {
 
 ### Extracting the logic to a custom Hook {/*extracting-the-logic-to-a-custom-hook*/}
 
-Usually you won't write `useSyncExternalStore` directly in your components. Instead, you'll typically call it from your own custom Hook. This lets you use the same external store from different components.
+Usually you won't write `useSyncExternalStore` directly in your components. Instead, you'll typically call it from your own custom Hook. This enables you use the same external store from different components.
 
 For example, this custom `useOnlineStatus` Hook tracks whether the network is online:
 
@@ -341,7 +341,7 @@ The `getServerSnapshot` function is similar to `getSnapshot`, but it runs only i
 - It runs on the server when generating the HTML.
 - It runs on the client during [hydration](/reference/react-dom/client/hydrateRoot), i.e. when React takes the server HTML and makes it interactive.
 
-This lets you provide the initial snapshot value which will be used before the app becomes interactive. If there is no meaningful initial value for the server rendering, omit this argument to [force rendering on the client.](/reference/react/Suspense#providing-a-fallback-for-server-errors-and-server-only-content)
+This enables you provide the initial snapshot value which will be used before the app becomes interactive. If there is no meaningful initial value for the server rendering, omit this argument to [force rendering on the client.](/reference/react/Suspense#providing-a-fallback-for-server-errors-and-server-only-content)
 
 <Note>
 

@@ -76,7 +76,7 @@ class AutoselectingInput extends Component {
 }
 ```
 
-Here, the `input` variable will be set to the `<input>` DOM element. This lets you do something with it. For example, when clicking "Show example" below mounts the input, [`input.select()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/select) selects all text in the input:
+Here, the `input` variable will be set to the `<input>` DOM element. This enables you do something with it. For example, when clicking "Show example" below mounts the input, [`input.select()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/select) selects all text in the input:
 
 <Sandpack>
 

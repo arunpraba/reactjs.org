@@ -4,7 +4,7 @@ title: "<progress>"
 
 <Intro>
 
-The [built-in browser `<progress>` component](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress) lets you render a progress indicator.
+The [built-in browser `<progress>` component](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress) enables you render a progress indicator.
 
 ```js
 <progress value={0.5} />

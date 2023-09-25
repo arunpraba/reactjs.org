@@ -115,7 +115,7 @@ React does not prescribe how you add CSS files. In the simplest case, you'll add
 
 ## Displaying data {/*displaying-data*/}
 
-JSX lets you put markup into JavaScript. Curly braces let you "escape back" into JavaScript so that you can embed some variable from your code and display it to the user. For example, this will display `user.name`:
+JSX enables you put markup into JavaScript. Curly braces let you "escape back" into JavaScript so that you can embed some variable from your code and display it to the user. For example, this will display `user.name`:
 
 ```js {3}
 return (
@@ -316,7 +316,7 @@ function MyButton() {
   // ...
 ```
 
-You’ll get two things from `useState`: the current state (`count`), and the function that lets you update it (`setCount`). You can give them any names, but the convention is to write `[something, setSomething]`.
+You’ll get two things from `useState`: the current state (`count`), and the function that enables you update it (`setCount`). You can give them any names, but the convention is to write `[something, setSomething]`.
 
 The first time the button is displayed, `count` will be `0` because you passed `0` to `useState()`. When you want to change state, call `setCount()` and pass the new value to it. Clicking this button will increment the counter:
 

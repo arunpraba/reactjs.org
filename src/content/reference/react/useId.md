@@ -216,7 +216,7 @@ input { margin: 5px; }
 
 </Sandpack>
 
-This lets you avoid calling `useId` for every single element that needs a unique ID.
+This enables you avoid calling `useId` for every single element that needs a unique ID.
 
 ---
 

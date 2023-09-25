@@ -18,7 +18,7 @@ React provides a declarative way to manipulate the UI. Instead of manipulating i
 
 ## How declarative UI compares to imperative {/*how-declarative-ui-compares-to-imperative*/}
 
-When you design UI interactions, you probably think about how the UI *changes* in response to user actions. Consider a form that lets the user submit an answer:
+When you design UI interactions, you probably think about how the UI *changes* in response to user actions. Consider a form that enables the user submit an answer:
 
 * When you type something into the form, the "Submit" button **becomes enabled.**
 * When you press "Submit", both the form and the button **become disabled,** and a spinner **appears.**
@@ -192,7 +192,7 @@ export default function Form({
 
 </Sandpack>
 
-You could call that prop anything you like, the naming is not important. Try editing `status = 'empty'` to `status = 'success'` to see the success message appear. Mocking lets you quickly iterate on the UI before you wire up any logic. Here is a more fleshed out prototype of the same component, still "controlled" by the `status` prop:
+You could call that prop anything you like, the naming is not important. Try editing `status = 'empty'` to `status = 'success'` to see the success message appear. Mocking enables you quickly iterate on the UI before you wire up any logic. Here is a more fleshed out prototype of the same component, still "controlled" by the `status` prop:
 
 <Sandpack>
 
@@ -485,7 +485,7 @@ function submitForm(answer) {
 
 </Sandpack>
 
-Although this code is longer than the original imperative example, it is much less fragile. Expressing all interactions as state changes lets you later introduce new visual states without breaking existing ones. It also lets you change what should be displayed in each state without changing the logic of the interaction itself.
+Although this code is longer than the original imperative example, it is much less fragile. Expressing all interactions as state changes enables you later introduce new visual states without breaking existing ones. It also enables you change what should be displayed in each state without changing the logic of the interaction itself.
 
 <Recap>
 

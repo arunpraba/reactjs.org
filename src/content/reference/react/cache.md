@@ -11,7 +11,7 @@ canary: true
 
 <Intro>
 
-`cache` lets you cache the result of a data fetch or computation.
+`cache` enables you cache the result of a data fetch or computation.
 
 ```js
 const cachedFn = cache(fn);

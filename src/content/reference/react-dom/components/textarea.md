@@ -4,7 +4,7 @@ title: "<textarea>"
 
 <Intro>
 
-The [built-in browser `<textarea>` component](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea) lets you render a multiline text input.
+The [built-in browser `<textarea>` component](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea) enables you render a multiline text input.
 
 ```js
 <textarea />

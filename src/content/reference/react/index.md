@@ -12,7 +12,7 @@ title: "Built-in React Hooks"
 
 ## State Hooks {/*state-hooks*/}
 
-*State* lets a component ["remember" information like user input.](/learn/state-a-components-memory) For example, a form component can use state to store the input value, while an image gallery component can use state to store the selected image index.
+*State* enables a component ["remember" information like user input.](/learn/state-a-components-memory) For example, a form component can use state to store the input value, while an image gallery component can use state to store the selected image index.
 
 To add state to a component, use one of these Hooks:
 
@@ -29,7 +29,7 @@ function ImageGallery() {
 
 ## Context Hooks {/*context-hooks*/}
 
-*Context* lets a component [receive information from distant parents without passing it as props.](/learn/passing-props-to-a-component) For example, your app's top-level component can pass the current UI theme to all components below, no matter how deep.
+*Context* enables a component [receive information from distant parents without passing it as props.](/learn/passing-props-to-a-component) For example, your app's top-level component can pass the current UI theme to all components below, no matter how deep.
 
 * [`useContext`](/reference/react/useContext) reads and subscribes to a context.
 
@@ -46,7 +46,7 @@ function Button() {
 *Refs* let a component [hold some information that isn't used for rendering,](/learn/referencing-values-with-refs) like a DOM node or a timeout ID. Unlike with state, updating a ref does not re-render your component. Refs are an "escape hatch" from the React paradigm. They are useful when you need to work with non-React systems, such as the built-in browser APIs.
 
 * [`useRef`](/reference/react/useRef) declares a ref. You can hold any value in it, but most often it's used to hold a DOM node.
-* [`useImperativeHandle`](/reference/react/useImperativeHandle) lets you customize the ref exposed by your component. This is rarely used.
+* [`useImperativeHandle`](/reference/react/useImperativeHandle) enables you customize the ref exposed by your component. This is rarely used.
 
 ```js
 function Form() {
@@ -87,8 +87,8 @@ A common way to optimize re-rendering performance is to skip unnecessary work. F
 
 To skip calculations and unnecessary re-rendering, use one of these Hooks:
 
-- [`useMemo`](/reference/react/useMemo) lets you cache the result of an expensive calculation.
-- [`useCallback`](/reference/react/useCallback) lets you cache a function definition before passing it down to an optimized component.
+- [`useMemo`](/reference/react/useMemo) enables you cache the result of an expensive calculation.
+- [`useCallback`](/reference/react/useCallback) enables you cache a function definition before passing it down to an optimized component.
 
 ```js
 function TodoList({ todos, tab, theme }) {
@@ -101,8 +101,8 @@ Sometimes, you can't skip re-rendering because the screen actually needs to upda
 
 To prioritize rendering, use one of these Hooks:
 
-- [`useTransition`](/reference/react/useTransition) lets you mark a state transition as non-blocking and allow other updates to interrupt it.
-- [`useDeferredValue`](/reference/react/useDeferredValue) lets you defer updating a non-critical part of the UI and let other parts update first.
+- [`useTransition`](/reference/react/useTransition) enables you mark a state transition as non-blocking and allow other updates to interrupt it.
+- [`useDeferredValue`](/reference/react/useDeferredValue) enables you defer updating a non-critical part of the UI and let other parts update first.
 
 ---
 
@@ -112,7 +112,7 @@ To prioritize rendering, use one of these Hooks:
 
 To read a value from a resource, use this Hook:
 
-- [`use`](/reference/react/use) lets you read the value of a resource like a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) or [context](/learn/passing-data-deeply-with-context).
+- [`use`](/reference/react/use) enables you read the value of a resource like a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) or [context](/learn/passing-data-deeply-with-context).
 
 ```js
 function MessageComponent({ messagePromise }) {
@@ -128,9 +128,9 @@ function MessageComponent({ messagePromise }) {
 
 These Hooks are mostly useful to library authors and aren't commonly used in the application code.
 
-- [`useDebugValue`](/reference/react/useDebugValue) lets you customize the label React DevTools displays for your custom Hook.
-- [`useId`](/reference/react/useId) lets a component associate a unique ID with itself. Typically used with accessibility APIs.
-- [`useSyncExternalStore`](/reference/react/useSyncExternalStore) lets a component subscribe to an external store.
+- [`useDebugValue`](/reference/react/useDebugValue) enables you customize the label React DevTools displays for your custom Hook.
+- [`useId`](/reference/react/useId) enables a component associate a unique ID with itself. Typically used with accessibility APIs.
+- [`useSyncExternalStore`](/reference/react/useSyncExternalStore) enables a component subscribe to an external store.
 
 ---
 

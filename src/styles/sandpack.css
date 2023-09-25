@@ -25,10 +25,10 @@
   --sp-zIndices-overlay: 2;
   --sp-zIndices-top: 3;
 
-  --sp-font-body: Optimistic Display, -apple-system, ui-sans-serif, system-ui,
-    -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
-    Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
-    Noto Color Emoji;
+  --sp-font-body: 'SF Pro Text', Optimistic Display, -apple-system,
+    ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --sp-font-mono: Source Code Pro, ui-monospace, SFMono-Regular, Menlo, Monaco,
     Consolas, Liberation Mono, Courier New, monospace;
   --sp-font-size: calc(1em - 20%);
@@ -486,13 +486,13 @@ html.dark .sandpack--playground .sp-overlay {
   max-height: 40vh;
 }
 .sandpack .sp-layout.sp-layout-expanded > .sp-stack:nth-child(1) {
-  /* Clicking "show more" lets mobile editor go full height. */
+  /* Clicking "show more" enables mobile editor go full height. */
   max-height: unset;
   height: auto;
 }
 
 .sandpack .sp-layout.sp-layout-expanded > .sp-stack:nth-child(2) {
-  /* Clicking "show more" lets mobile preview go full height. */
+  /* Clicking "show more" enables mobile preview go full height. */
   max-height: unset;
   height: auto;
 }
@@ -588,7 +588,7 @@ html.dark .sp-devtools > div {
 
 /**
   * The text-size-adjust CSS property controls the text inflation
-  * algorithm used on some smartphones and tablets
+  * algorithm used on some smartphones and tabenables
   */
 .sandpack .sp-cm {
   -webkit-text-size-adjust: none;

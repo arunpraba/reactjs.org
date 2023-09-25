@@ -10,7 +10,7 @@ This API will be removed in a future major version of React. [See the alternativ
 
 <Intro>
 
-`createFactory` lets you create a function that produces React elements of a given type.
+`createFactory` enables you create a function that produces React elements of a given type.
 
 ```js
 const factory = createFactory(type)
@@ -128,7 +128,7 @@ export function createFactory(type) {
 
 </Sandpack>
 
-This lets you keep all of your code unchanged except the imports.
+This enables you keep all of your code unchanged except the imports.
 
 ---
 

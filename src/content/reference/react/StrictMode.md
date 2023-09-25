@@ -5,7 +5,7 @@ title: <StrictMode>
 
 <Intro>
 
-`<StrictMode>` lets you find common bugs in your components early during development.
+`<StrictMode>` enables you find common bugs in your components early during development.
 
 
 ```js
@@ -79,7 +79,7 @@ root.render(
 
 We recommend wrapping your entire app in Strict Mode, especially for newly created apps. If you use a framework that calls [`createRoot`](/reference/react-dom/client/createRoot) for you, check its documentation for how to enable Strict Mode.
 
-Although the Strict Mode checks **only run in development,** they help you find bugs that already exist in your code but can be tricky to reliably reproduce in production. Strict Mode lets you fix bugs before your users report them.
+Although the Strict Mode checks **only run in development,** they help you find bugs that already exist in your code but can be tricky to reliably reproduce in production. Strict Mode enables you fix bugs before your users report them.
 
 <Note>
 
@@ -393,7 +393,7 @@ li {
 
 </Sandpack>
 
-**Strict Mode *always* calls your rendering function twice, so you can see the mistake right away** ("Create Story" appears twice). This lets you notice such mistakes early in the process. When you fix your component to render in Strict Mode, you *also* fix many possible future production bugs like the hover functionality from before:
+**Strict Mode *always* calls your rendering function twice, so you can see the mistake right away** ("Create Story" appears twice). This enables you notice such mistakes early in the process. When you fix your component to render in Strict Mode, you *also* fix many possible future production bugs like the hover functionality from before:
 
 <Sandpack>
 
@@ -722,7 +722,7 @@ button { margin-left: 10px; }
 
 **With Strict Mode, you immediately see that there is a problem** (the number of active connections jumps to 2). Strict Mode runs an extra setup+cleanup cycle for every Effect. This Effect has no cleanup logic, so it creates an extra connection but doesn't destroy it. This is a hint that you're missing a cleanup function.
 
-Strict Mode lets you notice such mistakes early in the process. When you fix your Effect by adding a cleanup function in Strict Mode, you *also* fix many possible future production bugs like the select box from before:
+Strict Mode enables you notice such mistakes early in the process. When you fix your Effect by adding a cleanup function in Strict Mode, you *also* fix many possible future production bugs like the select box from before:
 
 <Sandpack>
 

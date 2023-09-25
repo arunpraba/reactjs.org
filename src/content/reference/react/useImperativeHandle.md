@@ -4,7 +4,7 @@ title: useImperativeHandle
 
 <Intro>
 
-`useImperativeHandle` is a React Hook that lets you customize the handle exposed as a [ref.](/learn/manipulating-the-dom-with-refs)
+`useImperativeHandle` is a React Hook that enables you customize the handle exposed as a [ref.](/learn/manipulating-the-dom-with-refs)
 
 ```js
 useImperativeHandle(ref, createHandle, dependencies?)
@@ -168,7 +168,7 @@ input {
 
 ### Exposing your own imperative methods {/*exposing-your-own-imperative-methods*/}
 
-The methods you expose via an imperative handle don't have to match the DOM methods exactly. For example, this `Post` component exposes a `scrollAndFocusAddComment` method via an imperative handle. This lets the parent `Page` scroll the list of comments *and* focus the input field when you click the button:
+The methods you expose via an imperative handle don't have to match the DOM methods exactly. For example, this `Post` component exposes a `scrollAndFocusAddComment` method via an imperative handle. This enables the parent `Page` scroll the list of comments *and* focus the input field when you click the button:
 
 <Sandpack>
 

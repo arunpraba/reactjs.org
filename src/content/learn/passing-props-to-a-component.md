@@ -92,7 +92,7 @@ Now you can read these props inside the `Avatar` component.
 
 ### Step 2: Read props inside the child component {/*step-2-read-props-inside-the-child-component*/}
 
-You can read these props by listing their names `person, size` separated by the commas inside `({` and `})` directly after `function Avatar`. This lets you use them inside the `Avatar` code, like you would with a variable.
+You can read these props by listing their names `person, size` separated by the commas inside `({` and `})` directly after `function Avatar`. This enables you use them inside the `Avatar` code, like you would with a variable.
 
 ```js
 function Avatar({ person, size }) {

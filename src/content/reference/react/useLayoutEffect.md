@@ -257,7 +257,7 @@ Notice that even though the `Tooltip` component has to render in two passes (fir
 
 #### `useLayoutEffect` blocks the browser from repainting {/*uselayouteffect-blocks-the-browser-from-repainting*/}
 
-React guarantees that the code inside `useLayoutEffect` and any state updates scheduled inside it will be processed **before the browser repaints the screen.** This lets you render the tooltip, measure it, and re-render the tooltip again without the user noticing the first extra render. In other words, `useLayoutEffect` blocks the browser from painting.
+React guarantees that the code inside `useLayoutEffect` and any state updates scheduled inside it will be processed **before the browser repaints the screen.** This enables you render the tooltip, measure it, and re-render the tooltip again without the user noticing the first extra render. In other words, `useLayoutEffect` blocks the browser from painting.
 
 <Sandpack>
 
@@ -720,11 +720,11 @@ The purpose of `useLayoutEffect` is to let your component [use layout informatio
 2. Measure the layout *before the browser repaints the screen.*
 3. Render the final content using the layout information you've read.
 
-When you or your framework uses [server rendering](/reference/react-dom/server), your React app renders to HTML on the server for the initial render. This lets you show the initial HTML before the JavaScript code loads.
+When you or your framework uses [server rendering](/reference/react-dom/server), your React app renders to HTML on the server for the initial render. This enables you show the initial HTML before the JavaScript code loads.
 
 The problem is that on the server, there is no layout information.
 
-In the [earlier example](#measuring-layout-before-the-browser-repaints-the-screen), the `useLayoutEffect` call in the `Tooltip` component lets it position itself correctly (either above or below content) depending on the content height. If you tried to render `Tooltip` as a part of the initial server HTML, this would be impossible to determine. On the server, there is no layout yet! So, even if you rendered it on the server, its position would "jump" on the client after the JavaScript loads and runs.
+In the [earlier example](#measuring-layout-before-the-browser-repaints-the-screen), the `useLayoutEffect` call in the `Tooltip` component enables it position itself correctly (either above or below content) depending on the content height. If you tried to render `Tooltip` as a part of the initial server HTML, this would be impossible to determine. On the server, there is no layout yet! So, even if you rendered it on the server, its position would "jump" on the client after the JavaScript loads and runs.
 
 Usually, components that rely on layout information don't need to render on the server anyway. For example, it probably doesn't make sense to show a `Tooltip` during the initial render. It is triggered by a client interaction.
 

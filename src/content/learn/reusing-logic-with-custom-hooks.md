@@ -148,7 +148,7 @@ function useOnlineStatus() {
 }
 ```
 
-At the end of the function, return `isOnline`. This lets your components read that value:
+At the end of the function, return `isOnline`. This enables your components read that value:
 
 <Sandpack>
 
@@ -620,7 +620,7 @@ export function useChatRoom({ serverUrl, roomId }) {
 }
 ```
 
-This lets your `ChatRoom` component call your custom Hook without worrying about how it works inside:
+This enables your `ChatRoom` component call your custom Hook without worrying about how it works inside:
 
 ```js {4-7}
 export default function ChatRoom({ roomId }) {
@@ -1097,7 +1097,7 @@ Notice how you no longer need to know *how* `useChatRoom` works in order to use 
 
 You don't need to extract a custom Hook for every little duplicated bit of code. Some duplication is fine. For example, extracting a `useFormInput` Hook to wrap a single `useState` call like earlier is probably unnecessary.
 
-However, whenever you write an Effect, consider whether it would be clearer to also wrap it in a custom Hook. [You shouldn't need Effects very often,](/learn/you-might-not-need-an-effect) so if you're writing one, it means that you need to "step outside React" to synchronize with some external system or to do something that React doesn't have a built-in API for. Wrapping it into a custom Hook lets you precisely communicate your intent and how the data flows through it.
+However, whenever you write an Effect, consider whether it would be clearer to also wrap it in a custom Hook. [You shouldn't need Effects very often,](/learn/you-might-not-need-an-effect) so if you're writing one, it means that you need to "step outside React" to synchronize with some external system or to do something that React doesn't have a built-in API for. Wrapping it into a custom Hook enables you precisely communicate your intent and how the data flows through it.
 
 For example, consider a `ShippingForm` component that displays two dropdowns: one shows the list of cities, and another shows the list of areas in the selected city. You might start with some code that looks like this:
 
@@ -1813,7 +1813,7 @@ html, body { min-height: 300px; }
 
 </Sandpack>
 
-Effects let you connect React to external systems. The more coordination between Effects is needed (for example, to chain multiple animations), the more it makes sense to extract that logic out of Effects and Hooks *completely* like in the sandbox above. Then, the code you extracted *becomes* the "external system". This lets your Effects stay simple because they only need to send messages to the system you've moved outside React.
+Effects let you connect React to external systems. The more coordination between Effects is needed (for example, to chain multiple animations), the more it makes sense to extract that logic out of Effects and Hooks *completely* like in the sandbox above. Then, the code you extracted *becomes* the "external system". This enables your Effects stay simple because they only need to send messages to the system you've moved outside React.
 
 The examples above assume that the fade-in logic needs to be written in JavaScript. However, this particular fade-in animation is both simpler and much more efficient to implement with a plain [CSS Animation:](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
 

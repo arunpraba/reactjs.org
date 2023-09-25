@@ -4,7 +4,7 @@ title: useState
 
 <Intro>
 
-`useState` is a React Hook that lets you add a [state variable](/learn/state-a-components-memory) to your component.
+`useState` is a React Hook that enables you add a [state variable](/learn/state-a-components-memory) to your component.
 
 ```js
 const [state, setState] = useState(initialState);
@@ -46,7 +46,7 @@ The convention is to name state variables like `[something, setSomething]` using
 `useState` returns an array with exactly two values:
 
 1. The current state. During the first render, it will match the `initialState` you have passed.
-2. The [`set` function](#setstate) that lets you update the state to a different value and trigger a re-render.
+2. The [`set` function](#setstate) that enables you update the state to a different value and trigger a re-render.
 
 #### Caveats {/*caveats*/}
 
@@ -57,7 +57,7 @@ The convention is to name state variables like `[something, setSomething]` using
 
 ### `set` functions, like `setSomething(nextState)` {/*setstate*/}
 
-The `set` function returned by `useState` lets you update the state to a different value and trigger a re-render. You can pass the next state directly, or a function that calculates it from the previous state:
+The `set` function returned by `useState` enables you update the state to a different value and trigger a re-render. You can pass the next state directly, or a function that calculates it from the previous state:
 
 ```js
 const [name, setName] = useState('Edward');
@@ -111,7 +111,7 @@ The convention is to name state variables like `[something, setSomething]` using
 `useState` returns an array with exactly two items:
 
 1. The <CodeStep step={1}>current state</CodeStep> of this state variable, initially set to the <CodeStep step={3}>initial state</CodeStep> you provided.
-2. The <CodeStep step={2}>`set` function</CodeStep> that lets you change it to any other value in response to interaction.
+2. The <CodeStep step={2}>`set` function</CodeStep> that enables you change it to any other value in response to interaction.
 
 To update what’s on the screen, call the `set` function with some next state:
 
@@ -793,7 +793,7 @@ ul, li { margin: 0; padding: 0; }
 
 #### Writing concise update logic with Immer {/*writing-concise-update-logic-with-immer*/}
 
-If updating arrays and objects without mutation feels tedious, you can use a library like [Immer](https://github.com/immerjs/use-immer) to reduce repetitive code. Immer lets you write concise code as if you were mutating objects, but under the hood it performs immutable updates:
+If updating arrays and objects without mutation feels tedious, you can use a library like [Immer](https://github.com/immerjs/use-immer) to reduce repetitive code. Immer enables you write concise code as if you were mutating objects, but under the hood it performs immutable updates:
 
 <Sandpack>
 

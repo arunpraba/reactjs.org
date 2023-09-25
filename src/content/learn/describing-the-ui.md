@@ -4,7 +4,7 @@ title: Describing the UI
 
 <Intro>
 
-React is a JavaScript library for rendering user interfaces (UI). UI is built from small units like buttons, text, and images. React lets you combine them into reusable, nestable *components.* From web sites to phone apps, everything on the screen can be broken down into components. In this chapter, you'll learn to create, customize, and conditionally display React components.
+React is a JavaScript library for rendering user interfaces (UI). UI is built from small units like buttons, text, and images. React enables you combine them into reusable, nestable *components.* From web sites to phone apps, everything on the screen can be broken down into components. In this chapter, you'll learn to create, customize, and conditionally display React components.
 
 </Intro>
 
@@ -187,7 +187,7 @@ Read **[Writing Markup with JSX](/learn/writing-markup-with-jsx)** to learn how 
 
 ## JavaScript in JSX with curly braces {/*javascript-in-jsx-with-curly-braces*/}
 
-JSX lets you write HTML-like markup inside a JavaScript file, keeping rendering logic and content in the same place. Sometimes you will want to add a little JavaScript logic or reference a dynamic property inside that markup. In this situation, you can use curly braces in your JSX to "open a window" to JavaScript:
+JSX enables you write HTML-like markup inside a JavaScript file, keeping rendering logic and content in the same place. Sometimes you will want to add a little JavaScript logic or reference a dynamic property inside that markup. In this situation, you can use curly braces in your JSX to "open a window" to JavaScript:
 
 <Sandpack>
 

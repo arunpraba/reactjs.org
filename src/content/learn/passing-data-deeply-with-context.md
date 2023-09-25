@@ -4,7 +4,7 @@ title: Passing Data Deeply with Context
 
 <Intro>
 
-Usually, you will pass information from a parent component to a child component via props. But passing props can become verbose and inconvenient if you have to pass them through many components in the middle, or if many components in your app need the same information. *Context* lets the parent component make some information available to any component in the tree below it—no matter how deep—without passing it explicitly through props.
+Usually, you will pass information from a parent component to a child component via props. But passing props can become verbose and inconvenient if you have to pass them through many components in the middle, or if many components in your app need the same information. *Context* enables the parent component make some information available to any component in the tree below it—no matter how deep—without passing it explicitly through props.
 
 </Intro>
 
@@ -42,7 +42,7 @@ Wouldn't it be great if there were a way to "teleport" data to the components in
 
 ## Context: an alternative to passing props {/*context-an-alternative-to-passing-props*/}
 
-Context lets a parent component provide data to the entire tree below it. There are many uses for context. Here is one example. Consider this `Heading` component that accepts a `level` for its size:
+Context enables a parent component provide data to the entire tree below it. There are many uses for context. Here is one example. Consider this `Heading` component that accepts a `level` for its size:
 
 <Sandpack>
 
@@ -208,7 +208,7 @@ You can't do it with props alone. This is where context comes into play. You wil
 2. **Use** that context from the component that needs the data. (`Heading` will use `LevelContext`.)
 3. **Provide** that context from the component that specifies the data. (`Section` will provide `LevelContext`.)
 
-Context lets a parent--even a distant one!--provide some data to the entire tree inside of it.
+Context enables a parent--even a distant one!--provide some data to the entire tree inside of it.
 
 <DiagramGroup>
 
@@ -585,7 +585,7 @@ export default function Page() {
           ...
 ```
 
-Since context lets you read information from a component above, each `Section` could read the `level` from the `Section` above, and pass `level + 1` down automatically. Here is how you could do it:
+Since context enables you read information from a component above, each `Section` could read the `level` from the `Section` above, and pass `level + 1` down automatically. Here is how you could do it:
 
 ```js Section.js {5,8}
 import { useContext } from 'react';
@@ -834,7 +834,7 @@ export const LevelContext = createContext(0);
 
 You didn't do anything special for this to work. A `Section` specifies the context for the tree inside it, so you can insert a `<Heading>` anywhere, and it will have the correct size. Try it in the sandbox above!
 
-**Context lets you write components that "adapt to their surroundings" and display themselves differently depending on _where_ (or, in other words, _in which context_) they are being rendered.**
+**Context enables you write components that "adapt to their surroundings" and display themselves differently depending on _where_ (or, in other words, _in which context_) they are being rendered.**
 
 How context works might remind you of [CSS property inheritance.](https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance) In CSS, you can specify `color: blue` for a `<div>`, and any DOM node inside of it, no matter how deep, will inherit that color unless some other DOM node in the middle overrides it with `color: green`. Similarly, in React, the only way to override some context coming from above is to wrap children into a context provider with a different value.
 
@@ -853,7 +853,7 @@ If neither of these approaches works well for you, consider context.
 
 ## Use cases for context {/*use-cases-for-context*/}
 
-* **Theming:** If your app lets the user change its appearance (e.g. dark mode), you can put a context provider at the top of your app, and use that context in components that need to adjust their visual look.
+* **Theming:** If your app enables the user change its appearance (e.g. dark mode), you can put a context provider at the top of your app, and use that context in components that need to adjust their visual look.
 * **Current account:** Many components might need to know the currently logged in user. Putting it in context makes it convenient to read it anywhere in the tree. Some apps also let you operate multiple accounts at the same time (e.g. to leave a comment as a different user). In those cases, it can be convenient to wrap a part of the UI into a nested provider with a different current account value.
 * **Routing:** Most routing solutions use context internally to hold the current route. This is how every link "knows" whether it's active or not. If you build your own router, you might want to do it too.
 * **Managing state:** As your app grows, you might end up with a lot of state closer to the top of your app. Many distant components below may want to change it. It is common to [use a reducer together with context](/learn/scaling-up-with-reducer-and-context) to manage complex state and pass it down to distant components without too much hassle.
@@ -864,13 +864,13 @@ In general, if some information is needed by distant components in different par
 
 <Recap>
 
-* Context lets a component provide some information to the entire tree below it.
+* Context enables a component provide some information to the entire tree below it.
 * To pass context:
   1. Create and export it with `export const MyContext = createContext(defaultValue)`.
   2. Pass it to the `useContext(MyContext)` Hook to read it in any child component, no matter how deep.
   3. Wrap children into `<MyContext.Provider value={...}>` to provide it from a parent.
 * Context passes through any components in the middle.
-* Context lets you write components that "adapt to their surroundings".
+* Context enables you write components that "adapt to their surroundings".
 * Before you use context, try passing props or passing JSX as `children`.
 
 </Recap>

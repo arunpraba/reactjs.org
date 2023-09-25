@@ -11,7 +11,7 @@ The `use` Hook is currently only available in React's canary and experimental ch
 
 <Intro>
 
-`use` is a React Hook that lets you read the value of a resource like a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) or [context](/learn/passing-data-deeply-with-context).
+`use` is a React Hook that enables you read the value of a resource like a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) or [context](/learn/passing-data-deeply-with-context).
 
 ```js
 const value = use(resource);

@@ -202,7 +202,7 @@ Once you've played around with the finished tic-tac-toe game, keep scrolling. Yo
 
 ## Setup for the tutorial {/*setup-for-the-tutorial*/}
 
-In the live code editor below, click **Fork** in the top-right corner to open the editor in a new tab using the website CodeSandbox. CodeSandbox lets you write code in your browser and preview how your users will see the app you've created. The new tab should display an empty square and the starter code for this tutorial.
+In the live code editor below, click **Fork** in the top-right corner to open the editor in a new tab using the website CodeSandbox. CodeSandbox enables you write code in your browser and preview how your users will see the app you've created. The new tab should display an empty square and the starter code for this tutorial.
 
 <Sandpack>
 
@@ -1129,7 +1129,7 @@ export default function Board() {
 
 The `handleClick` function creates a copy of the `squares` array (`nextSquares`) with the JavaScript `slice()` Array method. Then, `handleClick` updates the `nextSquares` array to add `X` to the first (`[0]` index) square.
 
-Calling the `setSquares` function lets React know the state of the component has changed. This will trigger a re-render of the components that use the `squares` state (`Board`) as well as its child components (the `Square` components that make up the board).
+Calling the `setSquares` function enables React know the state of the component has changed. This will trigger a re-render of the components that use the `squares` state (`Board`) as well as its child components (the `Square` components that make up the board).
 
 <Note>
 
@@ -1355,7 +1355,7 @@ const nextSquares = ['X', null, null, null, null, null, null, null, null];
 
 The result is the same but by not mutating (changing the underlying data) directly, you gain several benefits.
 
-Immutability makes complex features much easier to implement. Later in this tutorial, you will implement a "time travel" feature that lets you review the game's history and "jump back" to past moves. This functionality isn't specific to games--an ability to undo and redo certain actions is a common requirement for apps. Avoiding direct data mutation lets you keep previous versions of the data intact, and reuse them later.
+Immutability makes complex features much easier to implement. Later in this tutorial, you will implement a "time travel" feature that enables you review the game's history and "jump back" to past moves. This functionality isn't specific to games--an ability to undo and redo certain actions is a common requirement for apps. Avoiding direct data mutation enables you keep previous versions of the data intact, and reuse them later.
 
 There is also another benefit of immutability. By default, all child components re-render automatically when the state of a parent component changes. This includes even the child components that weren't affected by the change. Although re-rendering is not by itself noticeable to the user (you shouldn't actively try to avoid it!), you might want to skip re-rendering a part of the tree that clearly wasn't affected by it for performance reasons. Immutability makes it very cheap for components to compare whether their data has changed or not. You can learn more about how React chooses when to re-render a component in [the `memo` API reference](/reference/react/memo).
 
@@ -1749,7 +1749,7 @@ You'll store the past `squares` arrays in another array called `history`, which 
 
 You will now write a new top-level component called `Game` to display a list of past moves. That's where you will place the `history` state that contains the entire game history.
 
-Placing the `history` state into the `Game` component will let you remove the `squares` state from its child `Board` component. Just like you "lifted state up" from the `Square` component into the `Board` component, you will now lift it up from the `Board` into the top-level `Game` component. This gives the `Game` component full control over the `Board`'s data and lets it instruct the `Board` to render previous turns from the `history`.
+Placing the `history` state into the `Game` component will let you remove the `squares` state from its child `Board` component. Just like you "lifted state up" from the `Square` component into the `Board` component, you will now lift it up from the `Board` into the top-level `Game` component. This gives the `Game` component full control over the `Board`'s data and enables it instruct the `Board` to render previous turns from the `history`.
 
 First, add a `Game` component with `export default`. Have it render the `Board` component and some markup:
 
@@ -2725,7 +2725,7 @@ You no longer need the `xIsNext` state declaration or the calls to `setXIsNext`.
 
 Congratulations! You've created a tic-tac-toe game that:
 
-- Lets you play tic-tac-toe,
+- enables you play tic-tac-toe,
 - Indicates when a player has won the game,
 - Stores a game's history as a game progresses,
 - Allows players to review a game's history and see previous versions of a game's board.
@@ -2905,7 +2905,7 @@ If you have extra time or want to practice your new React skills, here are some 
 
 1. For the current move only, show "You are at move #..." instead of a button.
 1. Rewrite `Board` to use two loops to make the squares instead of hardcoding them.
-1. Add a toggle button that lets you sort the moves in either ascending or descending order.
+1. Add a toggle button that enables you sort the moves in either ascending or descending order.
 1. When someone wins, highlight the three squares that caused the win (and when no one wins, display a message about the result being a draw).
 1. Display the location for each move in the format (row, col) in the move history list.
 

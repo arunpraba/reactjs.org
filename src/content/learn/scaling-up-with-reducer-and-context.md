@@ -4,7 +4,7 @@ title: Scaling Up with Reducer and Context
 
 <Intro>
 
-Reducers let you consolidate a component's state update logic. Context lets you pass information deep down to other components. You can combine reducers and context together to manage state of a complex screen.
+Reducers let you consolidate a component's state update logic. Context enables you pass information deep down to other components. You can combine reducers and context together to manage state of a complex screen.
 
 </Intro>
 
@@ -241,7 +241,7 @@ Here is how you can combine a reducer with context:
 
 ### Step 1: Create the context {/*step-1-create-the-context*/}
 
-The `useReducer` Hook returns the current `tasks` and the `dispatch` function that lets you update them:
+The `useReducer` Hook returns the current `tasks` and the `dispatch` function that enables you update them:
 
 ```js
 const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
@@ -250,7 +250,7 @@ const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
 To pass them down the tree, you will [create](/learn/passing-data-deeply-with-context#step-2-use-the-context) two separate contexts:
 
 - `TasksContext` provides the current list of tasks.
-- `TasksDispatchContext` provides the function that lets components dispatch actions.
+- `TasksDispatchContext` provides the function that enables components dispatch actions.
 
 Export them from a separate file so that you can later import them from other files:
 
@@ -1140,7 +1140,7 @@ const tasks = useTasks();
 const dispatch = useTasksDispatch();
 ```
 
-This doesn't change the behavior in any way, but it lets you later split these contexts further or add some logic to these functions. **Now all of the context and reducer wiring is in `TasksContext.js`. This keeps the components clean and uncluttered, focused on what they display rather than where they get the data:**
+This doesn't change the behavior in any way, but it enables you later split these contexts further or add some logic to these functions. **Now all of the context and reducer wiring is in `TasksContext.js`. This keeps the components clean and uncluttered, focused on what they display rather than where they get the data:**
 
 <Sandpack>
 
@@ -1344,7 +1344,7 @@ You can think of `TasksProvider` as a part of the screen that knows how to deal 
 
 <Note>
 
-Functions like `useTasks` and `useTasksDispatch` are called *[Custom Hooks.](/learn/reusing-logic-with-custom-hooks)* Your function is considered a custom Hook if its name starts with `use`. This lets you use other Hooks, like `useContext`, inside it.
+Functions like `useTasks` and `useTasksDispatch` are called *[Custom Hooks.](/learn/reusing-logic-with-custom-hooks)* Your function is considered a custom Hook if its name starts with `use`. This enables you use other Hooks, like `useContext`, inside it.
 
 </Note>
 

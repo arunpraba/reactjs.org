@@ -4,7 +4,7 @@ title: memo
 
 <Intro>
 
-`memo` lets you skip re-rendering a component when its props are unchanged.
+`memo` enables you skip re-rendering a component when its props are unchanged.
 
 ```
 const MemoizedComponent = memo(SomeComponent, arePropsEqual?)

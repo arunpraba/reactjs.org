@@ -399,7 +399,7 @@ textarea {
 
 </Sandpack>
 
-React lets you override the default behavior, and *force* a component to reset its state by passing it a different `key`, like `<Chat key={email} />`. This tells React that if the recipient is different, it should be considered a *different* `Chat` component that needs to be re-created from scratch with the new data (and UI like inputs). Now switching between the recipients resets the input field--even though you render the same component.
+React enables you override the default behavior, and *force* a component to reset its state by passing it a different `key`, like `<Chat key={email} />`. This tells React that if the recipient is different, it should be considered a *different* `Chat` component that needs to be re-created from scratch with the new data (and UI like inputs). Now switching between the recipients resets the input field--even though you render the same component.
 
 <Sandpack>
 
@@ -699,7 +699,7 @@ Read **[Extracting State Logic into a Reducer](/learn/extracting-state-logic-int
 
 ## Passing data deeply with context {/*passing-data-deeply-with-context*/}
 
-Usually, you will pass information from a parent component to a child component via props. But passing props can become inconvenient if you need to pass some prop through many components, or if many components need the same information. Context lets the parent component make some information available to any component in the tree below it—no matter how deep it is—without passing it explicitly through props.
+Usually, you will pass information from a parent component to a child component via props. But passing props can become inconvenient if you need to pass some prop through many components, or if many components need the same information. Context enables the parent component make some information available to any component in the tree below it—no matter how deep it is—without passing it explicitly through props.
 
 Here, the `Heading` component determines its heading level by "asking" the closest `Section` for its level. Each `Section` tracks its own level by asking the parent `Section` and adding one to it. Every `Section` provides information to all components below it without passing props--it does that through context.
 
@@ -801,7 +801,7 @@ Read **[Passing Data Deeply with Context](/learn/passing-data-deeply-with-contex
 
 ## Scaling up with reducer and context {/*scaling-up-with-reducer-and-context*/}
 
-Reducers let you consolidate a component’s state update logic. Context lets you pass information deep down to other components. You can combine reducers and context together to manage state of a complex screen.
+Reducers let you consolidate a component’s state update logic. Context enables you pass information deep down to other components. You can combine reducers and context together to manage state of a complex screen.
 
 With this approach, a parent component with complex state manages it with a reducer. Other components anywhere deep in the tree can read its state via context. They can also dispatch actions to update that state.
 

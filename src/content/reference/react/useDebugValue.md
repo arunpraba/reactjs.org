@@ -4,7 +4,7 @@ title: useDebugValue
 
 <Intro>
 
-`useDebugValue` is a React Hook that lets you add a label to a custom Hook in [React DevTools.](/learn/react-developer-tools)
+`useDebugValue` is a React Hook that enables you add a label to a custom Hook in [React DevTools.](/learn/react-developer-tools)
 
 ```js
 useDebugValue(value, format?)
@@ -119,4 +119,4 @@ useDebugValue(date, date => date.toDateString());
 
 Your formatting function will receive the <CodeStep step={1}>debug value</CodeStep> as a parameter and should return a <CodeStep step={2}>formatted display value</CodeStep>. When your component is inspected, React DevTools will call this function and display its result.
 
-This lets you avoid running potentially expensive formatting logic unless the component is actually inspected. For example, if `date` is a Date value, this avoids calling `toDateString()` on it for every render.
+This enables you avoid running potentially expensive formatting logic unless the component is actually inspected. For example, if `date` is a Date value, this avoids calling `toDateString()` on it for every render.

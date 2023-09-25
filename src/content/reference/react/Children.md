@@ -10,7 +10,7 @@ Using `Children` is uncommon and can lead to fragile code. [See common alternati
 
 <Intro>
 
-`Children` lets you manipulate and transform the JSX you received as the [`children` prop.](/learn/passing-props-to-a-component#passing-jsx-as-children)
+`Children` enables you manipulate and transform the JSX you received as the [`children` prop.](/learn/passing-props-to-a-component#passing-jsx-as-children)
 
 ```js
 const mappedChildren = Children.map(children, child =>
@@ -492,7 +492,7 @@ As mentioned earlier, there is no way to get the rendered output of an inner com
 
 ### Converting children to an array {/*converting-children-to-an-array*/}
 
-Call `Children.toArray(children)` to turn the `children` data structure into a regular JavaScript array. This lets you manipulate the array with built-in array methods like [`filter`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter), [`sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort), or [`reverse`.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse) 
+Call `Children.toArray(children)` to turn the `children` data structure into a regular JavaScript array. This enables you manipulate the array with built-in array methods like [`filter`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter), [`sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort), or [`reverse`.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse) 
 
 <Sandpack>
 
@@ -789,7 +789,7 @@ export default function TabSwitcher({ tabs }) {
 
 </Sandpack>
 
-Unlike passing the children as JSX, this approach lets you associate some extra data like `header` with each item. Because you are working with the `tabs` directly, and it is an array, you do not need the `Children` methods.
+Unlike passing the children as JSX, this approach enables you associate some extra data like `header` with each item. Because you are working with the `tabs` directly, and it is an array, you do not need the `Children` methods.
 
 ---
 

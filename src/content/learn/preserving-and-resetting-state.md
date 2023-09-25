@@ -757,7 +757,7 @@ Every time you click the button, the input state disappears! This is because a *
 
 ## Resetting state at the same position {/*resetting-state-at-the-same-position*/}
 
-By default, React preserves state of a component while it stays at the same position. Usually, this is exactly what you want, so it makes sense as the default behavior. But sometimes, you may want to reset a component's state. Consider this app that lets two players keep track of their scores during each turn:
+By default, React preserves state of a component while it stays at the same position. Usually, this is exactly what you want, so it makes sense as the default behavior. But sometimes, you may want to reset a component's state. Consider this app that enables two players keep track of their scores during each turn:
 
 <Sandpack>
 
@@ -1417,7 +1417,7 @@ This way, `Form` is always the second child, so it stays in the same position an
 
 #### Swap two form fields {/*swap-two-form-fields*/}
 
-This form lets you enter first and last name. It also has a checkbox controlling which field goes first. When you tick the checkbox, the "Last name" field will appear before the "First name" field.
+This form enables you enter first and last name. It also has a checkbox controlling which field goes first. When you tick the checkbox, the "Last name" field will appear before the "First name" field.
 
 It almost works, but there is a bug. If you fill in the "First name" input and tick the checkbox, the text will stay in the first input (which is now "Last name"). Fix it so that the input text *also* moves when you reverse the order.
 
@@ -2193,7 +2193,7 @@ button {
 
 </Sandpack>
 
-State is associated with the tree position. A `key` lets you specify a named position instead of relying on order.
+State is associated with the tree position. A `key` enables you specify a named position instead of relying on order.
 
 </Solution>
 

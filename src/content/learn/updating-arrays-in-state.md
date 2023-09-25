@@ -31,13 +31,13 @@ Here is a reference table of common array operations. When dealing with arrays i
 | replacing | `splice`, `arr[i] = ...` assignment | `map` ([example](#replacing-items-in-an-array))                     |
 | sorting   | `reverse`, `sort`                   | copy the array first ([example](#making-other-changes-to-an-array)) |
 
-Alternatively, you can [use Immer](#write-concise-update-logic-with-immer) which lets you use methods from both columns.
+Alternatively, you can [use Immer](#write-concise-update-logic-with-immer) which enables you use methods from both columns.
 
 <Pitfall>
 
 Unfortunately, [`slice`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) and [`splice`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) are named similarly but are very different:
 
-* `slice` lets you copy an array or a part of it.
+* `slice` enables you copy an array or a part of it.
 * `splice` **mutates** the array (to insert or delete items).
 
 In React, you will be using `slice` (no `p`!) a lot more often because you don't want to mutate objects or arrays in state. [Updating Objects](/learn/updating-objects-in-state) explains what mutation is and why it's not recommended for state.
@@ -141,7 +141,7 @@ button { margin-left: 5px; }
 
 </Sandpack>
 
-The array spread syntax also lets you prepend an item by placing it *before* the original `...artists`:
+The array spread syntax also enables you prepend an item by placing it *before* the original `...artists`:
 
 ```js
 setArtists([
@@ -334,7 +334,7 @@ button { margin: 5px; }
 
 ### Inserting into an array {/*inserting-into-an-array*/}
 
-Sometimes, you may want to insert an item at a particular position that's neither at the beginning nor at the end. To do this, you can use the `...` array spread syntax together with the `slice()` method. The `slice()` method lets you cut a "slice" of the array. To insert an item, you will create an array that spreads the slice _before_ the insertion point, then the new item, and then the rest of the original array.
+Sometimes, you may want to insert an item at a particular position that's neither at the beginning nor at the end. To do this, you can use the `...` array spread syntax together with the `slice()` method. The `slice()` method enables you cut a "slice" of the array. To insert an item, you will create an array that spreads the slice _before_ the insertion point, then the new item, and then the rest of the original array.
 
 In this example, the Insert button always inserts at the index `1`:
 
@@ -660,7 +660,7 @@ In general, **you should only mutate objects that you have just created.** If yo
 Updating nested arrays without mutation can get a little bit repetitive. [Just as with objects](/learn/updating-objects-in-state#write-concise-update-logic-with-immer):
 
 - Generally, you shouldn't need to update state more than a couple of levels deep. If your state objects are very deep, you might want to [restructure them differently](/learn/choosing-the-state-structure#avoid-deeply-nested-state) so that they are flat.
-- If you don't want to change your state structure, you might prefer to use [Immer](https://github.com/immerjs/use-immer), which lets you write using the convenient but mutating syntax and takes care of producing the copies for you.
+- If you don't want to change your state structure, you might prefer to use [Immer](https://github.com/immerjs/use-immer), which enables you write using the convenient but mutating syntax and takes care of producing the copies for you.
 
 Here is the Art Bucket List example rewritten with Immer:
 

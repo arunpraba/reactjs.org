@@ -14,8 +14,8 @@ The `react-dom` package contains methods that are only supported for the web app
 
 These APIs can be imported from your components. They are rarely used:
 
-* [`createPortal`](/reference/react-dom/createPortal) lets you render child components in a different part of the DOM tree.
-* [`flushSync`](/reference/react-dom/flushSync) lets you force React to flush a state update and update the DOM synchronously.
+* [`createPortal`](/reference/react-dom/createPortal) enables you render child components in a different part of the DOM tree.
+* [`flushSync`](/reference/react-dom/flushSync) enables you force React to flush a state update and update the DOM synchronously.
 
 ---
 

@@ -4,7 +4,7 @@ title: useRef
 
 <Intro>
 
-`useRef` is a React Hook that lets you reference a value that's not needed for rendering.
+`useRef` is a React Hook that enables you reference a value that's not needed for rendering.
 
 ```js
 const ref = useRef(initialValue)

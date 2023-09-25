@@ -58,7 +58,7 @@ On the client, call [`hydrateRoot`](/reference/react-dom/client/hydrateRoot) to 
   * **optional** `nonce`: A [`nonce`](http://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#nonce) string to allow scripts for [`script-src` Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src).
   * **optional** `onError`: A callback that fires whenever there is a server error, whether [recoverable](#recovering-from-errors-outside-the-shell) or [not.](#recovering-from-errors-inside-the-shell) By default, this only calls `console.error`. If you override it to [log crash reports,](#logging-crashes-on-the-server) make sure that you still call `console.error`. You can also use it to [adjust the status code](#setting-the-status-code) before the shell is emitted.
   * **optional** `progressiveChunkSize`: The number of bytes in a chunk. [Read more about the default heuristic.](https://github.com/facebook/react/blob/14c2be8dac2d5482fda8a0906a31d239df8551fc/packages/react-server/src/ReactFizzServer.js#L210-L225)
-  * **optional** `signal`: An [abort signal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) that lets you [abort server rendering](#aborting-server-rendering) and render the rest on the client.
+  * **optional** `signal`: An [abort signal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) that enables you [abort server rendering](#aborting-server-rendering) and render the rest on the client.
 
 
 #### Returns {/*returns*/}
@@ -140,7 +140,7 @@ This will attach event listeners to the server-generated HTML and make it intera
 
 #### Reading CSS and JS asset paths from the build output {/*reading-css-and-js-asset-paths-from-the-build-output*/}
 
-The final asset URLs (like JavaScript and CSS files) are often hashed after the build. For example, instead of `styles.css` you might end up with `styles.123456.css`. Hashing static asset filenames guarantees that every distinct build of the same asset will have a different filename. This is useful because it lets you safely enable long-term caching for static assets: a file with a certain name would never change content.
+The final asset URLs (like JavaScript and CSS files) are often hashed after the build. For example, instead of `styles.css` you might end up with `styles.123456.css`. Hashing static asset filenames guarantees that every distinct build of the same asset will have a different filename. This is useful because it enables you safely enable long-term caching for static assets: a file with a certain name would never change content.
 
 However, if you don't know the asset URLs until after the build, there's no way for you to put them in the source code. For example, hardcoding `"/styles.css"` into JSX like earlier wouldn't work. To keep them out of your source code, your root component can read the real filenames from a map passed as a prop:
 
@@ -198,7 +198,7 @@ async function handler(request) {
 }
 ```
 
-In the example above, the `bootstrapScriptContent` option adds an extra inline `<script>` tag that sets the global `window.assetMap` variable on the client. This lets the client code read the same `assetMap`:
+In the example above, the `bootstrapScriptContent` option adds an extra inline `<script>` tag that sets the global `window.assetMap` variable on the client. This enables the client code read the same `assetMap`:
 
 ```js {4}
 import { hydrateRoot } from 'react-dom/client';
@@ -450,7 +450,7 @@ If retrying rendering `Posts` on the client succeeds, the loading fallback from 
 
 Streaming introduces a tradeoff. You want to start streaming the page as early as possible so that the user can see the content sooner. However, once you start streaming, you can no longer set the response status code.
 
-By [dividing your app](#specifying-what-goes-into-the-shell) into the shell (above all `<Suspense>` boundaries) and the rest of the content, you've already solved a part of this problem. If the shell errors, your `catch` block will run which lets you set the error status code. Otherwise, you know that the app may recover on the client, so you can send "OK".
+By [dividing your app](#specifying-what-goes-into-the-shell) into the shell (above all `<Suspense>` boundaries) and the rest of the content, you've already solved a part of this problem. If the shell errors, your `catch` block will run which enables you set the error status code. Otherwise, you know that the app may recover on the client, so you can send "OK".
 
 ```js {11}
 async function handler(request) {

@@ -4,7 +4,7 @@ title: "<select>"
 
 <Intro>
 
-The [built-in browser `<select>` component](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select) lets you render a select box with options.
+The [built-in browser `<select>` component](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select) enables you render a select box with options.
 
 ```js
 <select>

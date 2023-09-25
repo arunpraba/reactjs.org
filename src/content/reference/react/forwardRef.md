@@ -4,7 +4,7 @@ title: forwardRef
 
 <Intro>
 
-`forwardRef` lets your component expose a DOM node to parent component with a [ref.](/learn/manipulating-the-dom-with-refs)
+`forwardRef` enables your component expose a DOM node to parent component with a [ref.](/learn/manipulating-the-dom-with-refs)
 
 ```js
 const SomeComponent = forwardRef(render)
@@ -110,7 +110,7 @@ const MyInput = forwardRef(function MyInput(props, ref) {
 });
 ```
 
-This lets the parent `Form` component access the <CodeStep step={2}>`<input>` DOM node</CodeStep> exposed by `MyInput`:
+This enables the parent `Form` component access the <CodeStep step={2}>`<input>` DOM node</CodeStep> exposed by `MyInput`:
 
 ```js [[1, 2, "ref"], [1, 10, "ref", 41], [2, 5, "ref.current"]]
 function Form() {
@@ -139,7 +139,7 @@ Keep in mind that exposing a ref to the DOM node inside your component makes it 
 
 #### Focusing a text input {/*focusing-a-text-input*/}
 
-Clicking the button will focus the input. The `Form` component defines a ref and passes it to the `MyInput` component. The `MyInput` component forwards that ref to the browser `<input>`. This lets the `Form` component focus the `<input>`.
+Clicking the button will focus the input. The `Form` component defines a ref and passes it to the `MyInput` component. The `MyInput` component forwards that ref to the browser `<input>`. This enables the `Form` component focus the `<input>`.
 
 <Sandpack>
 
@@ -193,7 +193,7 @@ input {
 
 #### Playing and pausing a video {/*playing-and-pausing-a-video*/}
 
-Clicking the button will call [`play()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/play) and [`pause()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/pause) on a `<video>` DOM node. The `App` component defines a ref and passes it to the `MyVideoPlayer` component. The `MyVideoPlayer` component forwards that ref to the browser `<video>` node. This lets the `App` component play and pause the `<video>`.
+Clicking the button will call [`play()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/play) and [`pause()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/pause) on a `<video>` DOM node. The `App` component defines a ref and passes it to the `MyVideoPlayer` component. The `MyVideoPlayer` component forwards that ref to the browser `<video>` node. This enables the `App` component play and pause the `<video>`.
 
 <Sandpack>
 
@@ -404,7 +404,7 @@ const MyInput = forwardRef(function MyInput(props, ref) {
 });
 ```
 
-If some component gets a ref to `MyInput`, it will only receive your `{ focus, scrollIntoView }` object instead of the DOM node. This lets you limit the information you expose about your DOM node to the minimum.
+If some component gets a ref to `MyInput`, it will only receive your `{ focus, scrollIntoView }` object instead of the DOM node. This enables you limit the information you expose about your DOM node to the minimum.
 
 <Sandpack>
 

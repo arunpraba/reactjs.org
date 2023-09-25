@@ -4,7 +4,7 @@ title: useEffect
 
 <Intro>
 
-`useEffect` is a React Hook that lets you [synchronize a component with an external system.](/learn/synchronizing-with-effects)
+`useEffect` is a React Hook that enables you [synchronize a component with an external system.](/learn/synchronizing-with-effects)
 
 ```js
 useEffect(setup, dependencies?)
@@ -120,7 +120,7 @@ When the `ChatRoom` component above gets added to the page, it will connect to t
 
 <Note>
 
-An Effect lets you [keep your component synchronized](/learn/synchronizing-with-effects) with some external system (like a chat service). Here, *external system* means any piece of code that's not controlled by React, such as:
+An Effect enables you [keep your component synchronized](/learn/synchronizing-with-effects) with some external system (like a chat service). Here, *external system* means any piece of code that's not controlled by React, such as:
 
 * A timer managed with <CodeStep step={1}>[`setInterval()`](https://developer.mozilla.org/en-US/docs/Web/API/setInterval)</CodeStep> and <CodeStep step={2}>[`clearInterval()`](https://developer.mozilla.org/en-US/docs/Web/API/clearInterval)</CodeStep>.
 * An event subscription using <CodeStep step={1}>[`window.addEventListener()`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)</CodeStep> and <CodeStep step={2}>[`window.removeEventListener()`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener)</CodeStep>.
@@ -218,7 +218,7 @@ button { margin-left: 10px; }
 
 #### Listening to a global browser event {/*listening-to-a-global-browser-event*/}
 
-In this example, the external system is the browser DOM itself. Normally, you'd specify event listeners with JSX, but you can't listen to the global [`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window) object this way. An Effect lets you connect to the `window` object and listen to its events. Listening to the `pointermove` event lets you track the cursor (or finger) position and update the red dot to move with it.
+In this example, the external system is the browser DOM itself. Normally, you'd specify event listeners with JSX, but you can't listen to the global [`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window) object this way. An Effect enables you connect to the `window` object and listen to its events. Listening to the `pointermove` event enables you track the cursor (or finger) position and update the red dot to move with it.
 
 <Sandpack>
 
@@ -1722,7 +1722,7 @@ function Page({ url, shoppingCart }) {
 }
 ```
 
-**Effect Events are not reactive and must always be omitted from dependencies of your Effect.** This is what lets you put non-reactive code (where you can read the latest value of some props and state) inside of them. By reading `shoppingCart` inside of `onVisit`, you ensure that `shoppingCart` won't re-run your Effect.
+**Effect Events are not reactive and must always be omitted from dependencies of your Effect.** This is what enables you put non-reactive code (where you can read the latest value of some props and state) inside of them. By reading `shoppingCart` inside of `onVisit`, you ensure that `shoppingCart` won't re-run your Effect.
 
 [Read more about how Effect Events let you separate reactive and non-reactive code.](/learn/separating-events-from-effects#reading-latest-props-and-state-with-effect-events)
 

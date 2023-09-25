@@ -4,7 +4,7 @@ title: createPortal
 
 <Intro>
 
-`createPortal` lets you render some children into a different part of the DOM.
+`createPortal` enables you render some children into a different part of the DOM.
 
 
 ```js
@@ -66,7 +66,7 @@ A portal only changes the physical placement of the DOM node. In every other way
 
 ### Rendering to a different part of the DOM {/*rendering-to-a-different-part-of-the-dom*/}
 
-*Portals* let your components render some of their children into a different place in the DOM. This lets a part of your component "escape" from whatever containers it may be in. For example, a component can display a modal dialog or a tooltip that appears above and outside of the rest of the page.
+*Portals* let your components render some of their children into a different place in the DOM. This enables a part of your component "escape" from whatever containers it may be in. For example, a component can display a modal dialog or a tooltip that appears above and outside of the rest of the page.
 
 To create a portal, render the result of `createPortal` with <CodeStep step={1}>some JSX</CodeStep> and the <CodeStep step={2}>DOM node where it should go</CodeStep>:
 
@@ -363,7 +363,7 @@ useEffect(() => {
 }, []);
 ```
 
-This lets you use `createPortal` to render React content into `popupContainer` once it becomes available:
+This enables you use `createPortal` to render React content into `popupContainer` once it becomes available:
 
 ```js {3-6}
 return (

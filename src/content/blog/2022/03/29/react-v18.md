@@ -148,7 +148,7 @@ Transitions will opt in to concurrent rendering, which allows the update to be i
 
 ### New Suspense Features {/*new-suspense-features*/}
 
-Suspense lets you declaratively specify the loading state for a part of the component tree if it's not yet ready to be displayed:
+Suspense enables you declaratively specify the loading state for a part of the component tree if it's not yet ready to be displayed:
 
 ```js
 <Suspense fallback={<Spinner />}>
@@ -156,7 +156,7 @@ Suspense lets you declaratively specify the loading state for a part of the comp
 </Suspense>
 ```
 
-Suspense makes the "UI loading state" a first-class declarative concept in the React programming model. This lets us build higher-level features on top of it.
+Suspense makes the "UI loading state" a first-class declarative concept in the React programming model. This enables us build higher-level features on top of it.
 
 We introduced a limited version of Suspense several years ago. However, the only supported use case was code splitting with React.lazy, and it wasn't supported at all when rendering on the server.
 
@@ -241,7 +241,7 @@ With Strict Mode in React 18, React will simulate unmounting and remounting the 
 
 #### useDeferredValue {/*usedeferredvalue*/}
 
-`useDeferredValue` lets you defer re-rendering a non-urgent part of the tree. It is similar to debouncing, but has a few advantages compared to it. There is no fixed time delay, so React will attempt the deferred render right after the first render is reflected on the screen. The deferred render is interruptible and doesn't block user input. [See docs here](/reference/react/useDeferredValue).
+`useDeferredValue` enables you defer re-rendering a non-urgent part of the tree. It is similar to debouncing, but has a few advantages compared to it. There is no fixed time delay, so React will attempt the deferred render right after the first render is reflected on the screen. The deferred render is interruptible and doesn't block user input. [See docs here](/reference/react/useDeferredValue).
 
 #### useSyncExternalStore {/*usesyncexternalstore*/}
 
